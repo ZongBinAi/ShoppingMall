@@ -1,0 +1,3650 @@
+@charset "gb2312";
+/*Tuesday, 08-Jul-2014 17:42:33 CST*/
+/*****全局reset 2012*****/
+body, form, p, h1, h2, h3, h4, h5, h6, dl, dt, dd, ol, ul, li, input, select, option {
+    padding: 0px;
+    margin: 0px;
+}
+
+ol, ul, li {
+    list-style: none
+}
+
+body {
+    text-align: left;
+    background: #4f90d2;
+    color: #333;
+    font: 12px \5B8B\4F53, simsun, tahoma;
+    -webkit-text-size-adjust: none;
+}
+
+img {
+    border: 0;
+    -ms-interpolation-mode: bicubic; /*IE7图片失真修复*/
+    vertical-align: top
+}
+
+i, em {
+    font-style: normal;
+}
+
+input, select, option, textarea {
+    font-size: 12px;
+    outline: none;
+}
+
+.clear {
+    height: 0;
+    line-height: 0;
+    font-size: 0;
+    overflow: hidden;
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1
+}
+
+.clearfix:after {
+    content: "\20";
+    clear: both;
+    height: 0;
+    display: block;
+    overflow: hidden
+}
+
+.justify {
+    text-align: justify;
+    text-justify: inter-ideograph;
+    white-space: normal;
+    word-break: break-all;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.spanclass {
+    display: none;
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    float: left;
+    width: 5px;
+    height: 5px;
+    font-size: 5px;
+    line-height: 5px;
+}
+
+.show {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+.block {
+    display: block;
+}
+
+noscript {
+    display: none;
+}
+
+.contentdiv {
+    display: none;
+}
+
+.pagination {
+    zoom: 1; /*轮换pagination属性*/
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #f60;
+    text-decoration: underline;
+}
+
+.mark {
+    height: 100%;
+    float: left;
+}
+
+.fl {
+    float: left
+}
+
+.subMark {
+    padding-right: 10px;
+    float: right;
+}
+
+.fr {
+    float: right
+}
+
+/*Tuesday, 08-Jul-2014 17:42:33 CST*/
+/*****chaNav(chaNav.css 框架)*****/
+/*导航*/
+.chaOthers a, .ks input {
+    background-image: url(http://www1.pconline.com.cn/2012/channel/images/channel_bg.png);
+    background-repeat: no-repeat
+}
+
+.chaLogo, .chaLogo img {
+    float: left;
+    display: inline;
+}
+
+.bindFunc {
+    float: right
+}
+
+.bindFunc .ks {
+    float: left;
+}
+
+.chaOthers {
+    float: left;
+    padding: 14px 28px 0 0;
+}
+
+.chaOthers a {
+    height: 13px;
+    line-height: 13px;
+    padding: 0px 0 0 20px;
+    margin-right: 12px;
+    font-weight: bold;
+}
+
+.chaOthers a.bj {
+    background-position: -140px 1px
+}
+
+.chaOthers a.ph {
+    background-position: -140px -12px
+}
+
+.chaOthers a.lt {
+    background-position: -140px -27px
+}
+
+.chaOthers a.rm {
+    background-position: -140px -41px
+}
+
+/*.chaOthers a.sg{background-position:-140px -46px}*/
+
+/*2012 新版导航*/
+.chaNav2012 li.current em, .chaNav2012 li .navCon {
+    background-image: url(http://www1.pconline.com.cn/2012/channel/images/channel_bg.png);
+    background-repeat: no-repeat
+}
+
+.chaNav2012 {
+    height: 40px;
+    line-height: 40px;
+    padding: 0;
+    overflow: hidden;
+    background: #103d8e;
+}
+
+.chaNav2012 ul {
+    float: left;
+}
+
+.chaNav2012 li {
+    float: left;
+    display: inline;
+    border-right: 1px solid #1c53a3;
+}
+
+.chaNav2012 li a {
+    padding: 0 14px;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    position: relative;
+    zoom: 1;
+    text-decoration: none;
+}
+
+.chaNav2012 li a em {
+    width: 1px;
+    height: 40px;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.chaNav2012 li a:hover {
+    color: #fff;
+    background: #1c53a3;
+    text-decoration: none
+}
+
+.chaNav2012 li.current {
+    background: none;
+}
+
+/*margin-left:-1px; padding-right:1px; border-right:none;*/
+.chaNav2012 li.current a {
+    background: #092770;
+    color: #fff;
+}
+
+.chaNav2012 li.sy {
+    margin-left: 0;
+}
+
+.chaNav2012 li.hover a {
+    padding-left: 30px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.chaNav2012 li.last {
+    background: none;
+}
+
+.chaNav2012 .subMark {
+    color: #6fadea
+}
+
+.chaNav2012 .subMark a {
+    color: #fff
+}
+
+.chaNav2012 .subMark a:hover {
+    color: #ff6;
+}
+
+/*手机特殊*/
+.chaNav2012 li .navCon {
+    width: 16px;
+    height: 17px;
+    float: left;
+    margin-right: 3px;
+    _margin-right: 0;
+    position: relative;
+    top: 11px;
+}
+
+.chaNav2012 li .android {
+    background-position: 0 -111px;
+}
+
+.chaNav2012 li .iPhone {
+    background-position: -17px -111px;
+}
+
+.chaNav2012 li .winPhone {
+    background-position: -34px -111px;
+}
+
+.chaNav2012 li .sybian {
+    background-position: -50px -111px;
+}
+
+.chaNav2012 li .i_3G {
+    background-position: -69px -111px;
+}
+
+.chaNav2012 li .i_4G {
+    background-position: -103px -111px;
+}
+
+.chaNav2012 li .phoneHouse {
+    margin-top: 2px;
+    background-position: -86px -111px;
+}
+
+/*手机特殊end*/
+
+/*导航下侧连接*/
+.chaSubNav {
+    overflow: hidden
+}
+
+/* height:55px; margin-bottom:5px; zoom:1;background:#ecf0f8;*/
+.chaSubNav .chaLinks {
+    width: 100%;
+    padding: 6px 0;
+}
+
+.chaSubNav .chaLinks a, .chaSubNav .chaLinks strong {
+    margin-right: 7px;
+}
+
+/*.chaSubNav .chaLinks a { margin-right:6px; color:#038}.chaSubNav .chaLinks a:hover { color:#f60}*/
+.chaSubNav .chaLinks span {
+    width: 220px;
+    line-height: 22px;
+    padding-right: 17px;
+    margin-right: 18px;
+    float: left;
+    border-right: 1px dashed #9ebddc;
+}
+
+.chaSubNav .chaLinks span.last {
+    border: none;
+    padding-right: 0;
+    margin-right: 0
+}
+
+.chaSubNav .chaLinks strong a {
+    margin-right: 0;
+}
+
+.chaSubNav .chaLinks span.autoWidth {
+    width: auto;
+}
+
+/*机型专区*/
+.chaQte .subMark .aBtn em {
+    background-image: url(http://www1.pconline.com.cn/2012/channel/images/channel_bg.png);
+    background-repeat: no-repeat
+}
+
+.chaQte {
+    padding: 2px 5px 5px;
+    border: 1px solid #c6d3e6;
+    background: #ecf0f9
+}
+
+.chaQte .pcComTab .pagination {
+    border-bottom-color: #ecf0f9
+}
+
+.chaQte .pagination .toc {
+    width: 95px;
+}
+
+.chaQte .subMark {
+    line-height: 23px;
+    padding-right: 0
+}
+
+.chaQte .subMark .toc {
+    width: 60px;
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+.chaQte .subMark .aBtn {
+    height: 23px;
+    line-height: 23px;
+    padding: 0 32px 0 18px;
+    position: relative;
+    top: 1px
+}
+
+.chaQte .subMark .aBtn em {
+    width: 13px;
+    height: 13px;
+    background-position: -87px 0;
+    position: absolute;
+    right: 16px;
+    top: 5px;
+    cursor: pointer
+}
+
+.chaQte .subMark .aBtn:hover em {
+    background-position: -87px -14px;
+}
+
+.chaQte .moreInfo {
+    display: none;
+}
+
+.chaOption {
+    height: 20px;
+    line-height: 20px;
+    padding: 6px 10px;
+    border-bottom: 1px solid #d4ddec;
+    overflow: hidden
+}
+
+.chaOption .sOption {
+    color: #aaa;
+}
+
+.chaOption .aBtn {
+    padding: 0 20px 0 10px;
+    position: relative;
+    zoom: 1
+}
+
+.chaOption .aBtn em {
+    width: 7px;
+    height: 4px;
+    right: 8px;
+    top: 8px;
+    background: url(http://www1.pconline.com.cn/2012/channel/images/channel_icon.png) center -5px no-repeat;
+}
+
+.chaOption .aBtn:hover em {
+    background-position: center -64px;
+}
+
+.chaOption .extended em {
+    background-position: center 0;
+}
+
+.chaOption .extended:hover em {
+    background-position: center -10px;
+}
+
+.chooseTab .listWrap {
+    background: #fff
+}
+
+.dlCha {
+    padding: 10px 0 10px 10px;
+    border-bottom: 1px solid #d4ddec;
+}
+
+.dlCha dt, .dlCha dd {
+    float: left;
+    line-height: 18px;
+}
+
+.dlCha dt {
+    height: 18px;
+    padding: 0 6px;
+    margin-right: 8px;
+    background: #fa8536;
+    overflow: hidden;
+    color: #fff;
+    text-align: center
+}
+
+.dlCha dd {
+    margin-right: 10px;
+}
+
+.dlCha dd a {
+    margin-right: 6px;
+    color: #038
+}
+
+.dlCha dd a:hover {
+    color: #f60
+}
+
+.dlCha dd.ddBrand {
+    width: 916px;
+    margin: 0;
+}
+
+.dlCha dd.ddBrand a {
+    margin-right: 0
+}
+
+.dlCha dd .ulDrop {
+    margin: -3px 0 0 -6px;
+}
+
+.dlCha .red a {
+    color: #c00
+}
+
+.dlCha .red a:hover {
+    color: #f60
+}
+
+.ulDrop {
+    float: left;
+    display: inline;
+}
+
+.ulDrop li {
+    padding: 0 6px;
+    margin-top: 3px;
+    float: left;
+    display: inline;
+    position: relative;
+    color: #038;
+}
+
+.ulDrop li i {
+    white-space: nowrap;
+}
+
+.ulDrop .dropMore {
+    width: auto;
+    height: auto;
+    border: 2px solid #3a67b1;
+    background: #fff;
+    display: none;
+    position: absolute;
+    left: -13px;
+    top: -4px;
+    text-align: center
+}
+
+.ulDrop .dropMore span {
+    display: inline;
+    zoom: normal
+}
+
+.ulDrop .dropMore a {
+    line-height: 21px;
+    padding: 0 5px;
+    margin-right: 0;
+    display: block;
+    color: #333;
+    text-align: center;
+    white-space: nowrap
+}
+
+.ulDrop .dropMore a:hover {
+    background: #3a67b1;
+    color: #fff;
+    text-decoration: none;
+}
+
+.ulDrop li.hover {
+    z-index: 2
+}
+
+.ulDrop li.hover .dropMore {
+    display: block;
+}
+
+/*机型专区end*/
+
+/*新加入手机最新产品，图片形式露出*/
+.chaQte .proNew {
+    height: 108px;
+    padding-right: 0
+}
+
+.chaQte .proNew .expPicA li {
+    width: 100px;
+    display: inline;
+    padding: 4px 0;
+    margin: 0 28px 0 0
+}
+
+/*聚超值 add by guoxuemin 2013-08-13*/
+.CZ-slide .tit a,
+.jczIcon {
+    background: url(http://www1.pconline.com.cn/2012/channel/images/channel_bg.png) no-repeat;
+}
+
+.CZ-slide {
+    height: 14px;
+    line-height: 14px;
+    overflow: hidden;
+    margin: 6px 20px 0 0;
+}
+
+.CZ-slide .tit a {
+    float: left;
+    color: #777;
+    padding: 0 8px 0 18px;
+    height: 14px;
+    background-position: -146px -813px;
+}
+
+.CZ-slide .tit a:hover {
+    color: #f60;
+}
+
+.CZ-slide .contentWrap {
+    float: left;
+}
+
+.CZ-slide li {
+    height: 27px;
+    width: 144px;
+    overflow: hidden;
+}
+
+.CZ-slide li.current {
+    font-weight: normal;
+}
+
+.CZ-slide li.current a {
+    color: #333;
+}
+
+.CZ-slide li.current a:hover {
+    color: #f60;
+}
+
+.jczIcon {
+    display: inline;
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin-top: 4px;
+    background-position: -140px -914px;
+}
+
+.CZ-slide .tit a.noBg {
+    padding-left: 4px;
+    background: none;
+}
+
+/*特殊处理*/
+.pcComTab .CZ-slide li.current a {
+    color: #333;
+    font-weight: normal;
+}
+
+.pcComTab .CZ-slide li.current a:hover {
+    color: #f60;
+}
+
+/*Tuesday, 08-Jul-2014 17:42:33 CST*/
+/*****ks(ks.css 框架)*****/
+/*快搜*/
+.ks {
+    width: 330px;
+    padding: 5px 0 10px;
+    float: right;
+}
+
+.ks .searchItem {
+    position: relative;
+    zoom: 1
+}
+
+.ks .searchItem .ksLink {
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    z-index: 10;
+    cursor: pointer
+}
+
+.ks .searchItem input {
+    float: left;
+    background: url(http://www1.pconline.com.cn/2012/channel/images/channel_icon.png) 0 -126px no-repeat;
+    background-color: #fff;
+    color: #777;
+    -webkit-appearance: none;
+}
+
+.ks .searchItem input.focus {
+    width: 246px;
+    padding-left: 3px;
+    background: none;
+    background-color: #fff;
+    color: #333;
+}
+
+.ks .searchItem .ksKeyword {
+    width: 221px;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 0 0 28px;
+    border: 2px solid #ff9934;
+    border-right: none;
+}
+
+.ks .searchItem .ksSubmit {
+    width: 79px;
+    height: 32px;
+    line-height: 32px;
+    padding: 0;
+    background: #ff9934;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer
+}
+
+/*Tuesday, 08-Jul-2014 17:42:33 CST*/
+/*****模块slidePic(slidePic.css)*****/
+/*2013版footer*/
+body #bottom {
+    width: 1000px;
+    background: #4f90d2;
+}
+
+body #bottom .links {
+    background: none;
+}
+
+body #bottom .links, body #bottom .links a {
+    color: #fff;
+}
+
+.wrap {
+    zoom: 1;
+    height: auto;
+    width: 990px;
+    background: #FFF;
+    margin: 0 auto;
+    padding: 0 5px;
+    overflow: hidden
+}
+
+.layA, .layB, .layC, .layAB, .layBC, .lay2D, .lay4D {
+    margin: 0 5px 10px;
+    float: left;
+    display: inline;
+}
+
+.layA {
+    width: 350px;
+    margin-left: 0
+}
+
+.layB {
+    width: 310px;
+}
+
+.layC {
+    width: 230px;
+    margin-right: 0
+}
+
+.layAB {
+    width: 750px;
+    margin-left: 0
+}
+
+.layBC {
+    width: 590px;
+    margin-right: 0
+}
+
+.lay3D {
+    width: 310px;
+}
+
+body .last {
+    margin-right: 0
+}
+
+body .first {
+    margin-left: 0
+}
+
+.modNav {
+    width: 990px;
+    margin: 0 auto;
+    background: #fff
+}
+
+.modNav .banner {
+    padding: 5px;
+    text-align: center
+}
+
+.mb10 {
+    margin-bottom: 10px
+}
+
+.mt10 {
+    margin-top: 10px
+}
+
+/*换成新的*/
+.chaBot {
+    height: 32px;
+    padding: 0 4px 0 8px;
+    border: 1px solid #D1DEEE;
+    border-top: none;
+    line-height: 32px;
+    color: #777;
+    background: #ecf0f8
+}
+
+.chaBot .login input {
+    margin-top: 5px;
+    border: 1px solid #99add4;
+    width: 128px;
+    height: 20px
+}
+
+.chaBot .login input.text {
+    width: 100px;
+    height: 18px;
+    border: 1px solid #ccc;
+    padding: 0 2px;
+    line-height: 18px;
+}
+
+.chaBot .login input.submit {
+    width: 52px;
+    height: 22px;
+    border: none;
+    padding: 0;
+    line-height: 22px;
+    color: #fff;
+    background: #1b4798;
+    cursor: pointer
+}
+
+.chaBot .login {
+    float: left;
+}
+
+.chaBot .login span, .chaBot .login a, .chaBot .login input {
+    float: left;
+    margin-right: 8px
+}
+
+.chaBot .login a {
+    color: #333
+}
+
+.chaBot .login a:hover {
+    color: #f60
+}
+
+.chaBot .changeCity {
+    float: right;
+}
+
+.chaBot .city {
+    color: #c00
+}
+
+.chaBot .location {
+    float: right;
+}
+
+.chaBot .drop {
+    position: relative;
+    float: right;
+    padding: 0 12px;
+    background: url(http://www1.pconline.com.cn/2012/channel/zzzj/images/listico.png) no-repeat 26px -403px
+}
+
+.chaBot .list {
+    position: absolute;
+    top: 32px;
+    right: -9px;
+    width: 200px;
+    border: 1px solid #dfe5f1;
+    border-top: 1px solid #ECF0F8;
+    padding: 5px;
+    background: #fdfdfd;
+    line-height: 20px
+}
+
+.chaBot .btn {
+    height: 22px;
+    padding: 0 13px;
+    color: #fff;
+    background: #f60
+}
+
+.chaBot .btn:hover {
+    color: #fff;
+    background: #f60
+}
+
+.changeCity .list a {
+    display: inline-block;
+    zoom: 1;
+    margin: 0 2px
+}
+
+.chaBot .login a.help {
+    font-weight: bold;
+    color: #c00
+}
+
+/*Monday, 04-Feb-2013 12:26:54 CST*/
+/*按钮模块*/
+.btn {
+    border: none;
+    text-align: center;
+    cursor: pointer
+}
+
+.btn:hover {
+    color: #666;
+    text-decoration: none;
+}
+
+/*Monday, 04-Feb-2013 12:26:54 CST*/
+/*modBoxF模块*/
+.modBoxF {
+    float: left;
+    border: 1px solid #ddd;
+    margin: 0 10px 10px 0
+}
+
+.thF {
+    height: 31px;
+    padding: 0 5px;
+    line-height: 31px;
+    background: #ecf0f8
+}
+
+.thF .mark {
+    float: left;
+    padding-left: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #038
+}
+
+.thF .mark a {
+    color: #038
+}
+
+.thF .mark a:hover {
+    color: #f60
+}
+
+.thF .submark {
+    float: right;
+    color: #777
+}
+
+.thF .submark:hover {
+    color: #f60
+}
+
+.tbF {
+    padding: 5px
+}
+
+/*modBoxF1: modBoxF模块变体*/
+.modBoxF1 {
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border: none
+}
+
+/*Monday, 04-Feb-2013 12:26:54 CST*/
+/*modBoxF模块*/
+.modBoxG {
+    float: left;
+    border: 1px solid #feba33;
+    margin: 0 10px 10px 0
+}
+
+.thG {
+    height: 36px;
+    line-height: 36px;
+    border-bottom: 2px solid #d4ddec;
+    position: relative;
+    width: 450px;
+    background: #fff
+}
+
+.thG .mark {
+    padding: 0 11px;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    border-bottom: 2px solid #2a5ab3;
+    color: #038;
+    position: absolute
+}
+
+.thG .bj {
+    display: inline-block;
+    color: #777;
+    margin-left: 100px
+}
+
+.thG .star {
+    color: #c00
+}
+
+.thG .submark {
+    float: right;
+    color: #777
+}
+
+.tbG {
+    border-left: 5px solid #ecf0f8;
+    width: 440px;
+    position: relative;
+}
+
+/*modBoxF1: modBoxF模块变体*/
+.modBoxG1 {
+    margin-bottom: 10px
+}
+
+/*main*/
+/*.wrap {min-height:1000px}*/
+.layLT {
+    width: 460px;
+    margin: 0;
+    overflow: hidden
+}
+
+.layRT {
+    width: 526px;
+    margin: 0;
+    overflow: hidden;
+    height: 1154px;
+    _height: 1159px;
+    margin-top: 36px;
+    border: 2px solid #3a67b1
+}
+
+.paper {
+    height: 1101px;
+    height: auto;
+    margin-bottom: 0;
+    width: 450px;
+    background: url(http://www1.pconline.com.cn/2012/channel/zzzj/images/fbg.png) repeat-y
+}
+
+.info {
+    position: relative;
+    margin-left: -5px;
+    width: 460px;
+    left: 0;
+    top: 0
+}
+
+.info .tbF {
+    padding: 5px
+}
+
+.info td {
+    height: 39px;
+    line-height: 39px;
+    vertical-align: middle;
+    text-align: center;
+    border-bottom: 1px dotted #d4ddec
+}
+
+.info .lw {
+    width: 15px;
+    border-bottom: none
+}
+
+.info .lwA {
+    width: 5px;
+    border-bottom: none
+}
+
+.info th {
+    line-height: 30px;
+    background: #ecf0f8;
+    font-weight: normal;
+    color: #333;
+    text-align: center
+}
+
+.info .thA {
+    height: 0;
+    font-size: 0;
+    overflow: hidden;
+    display: none
+}
+
+.info tfoot td {
+    border: none;
+    height: 50px;
+    padding: 0 10px;
+    background: #fff;
+    border-bottom: 1px solid #d4ddec;
+    text-align: right;
+    font-size: 12px
+}
+
+.info .current {
+    background: #3a67b1;
+}
+
+.info .current td {
+    color: #fff;
+    border-bottom: 1px solid #3a67b1
+}
+
+.info .final {
+    color: #c00;
+    font-size: 26px;
+    font-family: "微软雅黑";
+    font-weight: 700
+}
+
+.info textarea {
+    position: relative;
+    width: 100%;
+    height: 26px;
+    vertical-align: middle;
+    padding: 0;
+    padding-top: 0px;
+    line-height: 26px;
+    border: none;
+    overflow: hidden;
+    background: none;
+    text-align: center;
+    text-indent: 0
+}
+
+.info textarea.name {
+    height: 26px;
+    padding: inherit;
+    line-height: 26px;
+}
+
+.info .current textarea.name {
+    color: #fff
+}
+
+.info .current textarea.focus {
+    color: #333
+}
+
+.info .current .num {
+    color: #fff
+}
+
+/*.info .name {width:130px}*/
+
+.info .price {
+    width: 50px;
+    color: #c00;
+    font-family: "微软雅黑";
+    font-size: 14px
+}
+
+.info .current .price {
+    color: #fff
+}
+
+.info .remove {
+    visibility: hidden;
+    color: #039;
+    width: 19px;
+    height: 19px;
+    overflow: hidden;
+    background: url(http://www1.pconline.com.cn/2012/channel/zzzj/images/xx.png) no-repeat;
+    display: inline-block;
+    margin: 0 auto
+}
+
+.info .current .remove {
+    background-position: 0 -21px
+}
+
+.info textarea.focus {
+    height: 20px;
+    line-height: 15px;
+    border: 1px solid #ddd;
+    background: #fff;
+    padding-top: 6px;
+    text-indent: -1px
+}
+
+.info input {
+    width: 80%;
+    height: 22px;
+    line-height: 22px;
+    border: 1px solid #ccc;
+    background: none;
+    text-align: center
+}
+
+.info .star {
+    color: #c00
+}
+
+.info .even td {
+    background: #fcfaf1
+}
+
+.info {
+    margin-bottom: 10px
+}
+
+.infoA {
+    width: 440px;
+    margin: 0;
+    height: 28px;
+}
+
+.filter {
+    border-bottom: none;
+    margin-bottom: 0;
+    background: #fff
+}
+
+.filter .tabHead span {
+    float: left;
+    width: 55px;
+    height: 23px;
+    border: 1px solid #ddd;
+    margin: 1px 9px 9px 1px;
+    background: url(http://www1.pconline.com.cn/2010/images/mydiy/bg_diy.png) no-repeat -350px -150px;
+    line-height: 23px;
+    text-align: center;
+    cursor: pointer
+}
+
+.filter .tbF {
+    padding: 0
+}
+
+.filter .tabHead .picked {
+    background-position: -395px -150px
+}
+
+.filter .tabHead .selected {
+    border: 1px solid #ecb58c;
+    background-position: -295px -150px
+}
+
+.filter .tabBody {
+    padding: 2px
+}
+
+.filter .contentdiv {
+    display: none;
+    position: relative;
+    width: 522px
+}
+
+.filter .tabBody .thead {
+    height: 30px;
+    line-height: 26px;
+    padding: 0 10px;
+    width: 505px;
+    color: #038;
+    font-size: 14px;
+    position: absolute;
+    top: -32px
+}
+
+.filter .tabBody .current {
+    background: #f60;
+    color: #fff;
+}
+
+.filter .hCap {
+    float: left;
+    font-weight: bold
+}
+
+.filter .search {
+    float: right;
+    padding-top: 3px;
+    line-height: 0
+}
+
+.filter .search .text {
+    height: 20px;
+    width: 122px;
+    padding: 0 3px;
+    border: 1px solid #99add4;
+    background: #fff
+}
+
+.filter .search .submit {
+    width: 52px;
+    height: 22px;
+    line-height: 22px;
+    border: none;
+    background: #f60;
+    color: #fff
+}
+
+.filter .tbody {
+    padding: 10px
+}
+
+.filter .tbody select, .filter .tbody input {
+    margin: 5px 0;
+    vertical-align: middle
+}
+
+.filter .tabBody label {
+    display: inline-block;
+    zoom: 1;
+}
+
+.filter .brand {
+    line-height: 28px;
+    color: #777;
+    margin-bottom: 3px
+}
+
+.filter .brand a {
+    color: #038;
+    display: inline-block;
+    padding: 0 5px;
+    height: 22px;
+    line-height: 22px;
+}
+
+.filter .brand a:hover, .filter .brand .content a:hover, .filter .brand .content .current {
+    background: #fee8da;
+    color: #f60
+}
+
+.filter .brand .mlb {
+    display: inline-block;
+    float: left
+}
+
+.prodcutList {
+    margin-bottom: 0
+}
+
+.prodcutList .thead {
+    height: 25px;
+    line-height: 27px;
+    border-bottom: 1px solid #ddd;
+    background: #f5f5f5;
+    overflow: hidden;
+    display: none
+}
+
+.prodcutList .thead li {
+    float: left;
+    color: #777;
+    text-align: center;
+}
+
+.prodcutList .capImg {
+    width: 111px
+}
+
+.prodcutList .capType {
+    width: 350px
+}
+
+.prodcutList .thF {
+    padding-right: 0
+}
+
+.sType {
+    display: block;
+    padding-right: 10px;
+    height: 31px
+}
+
+.sType a {
+    display: block;
+    display: inline-block;
+    height: 31px;
+    text-align: center;
+    line-height: 31px;
+    padding: 0 10px;
+    color: #333
+}
+
+.sType a.selected {
+    position: relative;
+    height: 28px;
+    _height: 29px;
+    line-height: 29px;
+    border-bottom: 2px solid #2a5ab3;
+    color: #038;
+    font-weight: 700;
+    background: url(http://www1.pconline.com.cn/2012/channel/images/channel_icon.png) no-repeat center 25px
+}
+
+.sType a.selected:hover {
+    text-decoration: none;
+    color: #000;
+    cursor: default;
+    color: #038;
+    font-weight: 700
+}
+
+.sType a.last {
+    border-right: none
+}
+
+.pList {
+    line-height: 22px;
+    -moz-user-select: none; /*ff下防止用户拖动填充数据*/
+}
+
+.pList li {
+    height: 85px;
+    padding: 10px;
+    border-bottom: 1px dashed #ddd;
+    zoom: 1; /*ie6 bug*/;
+    overflow: hidden;
+    float: left;
+    width: 496px
+}
+
+.pList dt a {
+    font-size: 14px;
+    color: #039;
+    font-weight: bold
+}
+
+.pList .des a {
+    color: #039
+}
+
+.pList .img {
+    float: left;
+    margin-right: 15px;
+}
+
+.pList .img img {
+    width: 95px;
+    vertical-align: top;
+}
+
+.pList .fuc {
+    float: right;
+    width: 50px;
+    margin: 15px 5px 15px 10px;
+    line-height: 44px;
+}
+
+.pList .fuc a {
+    float: left
+}
+
+.pList .price {
+    float: right;
+    margin: 0 10px;
+    color: #c00;
+    font: bold 14px/14px arial
+}
+
+.pList .time {
+    float: right;
+    color: #777
+}
+
+.pList .last {
+    height: auto;
+    margin-bottom: 0;
+    border-bottom: none;
+    padding-top: 22px
+}
+
+.pList .last strong {
+    margin: 0 5px;
+    font-weight: bold;
+    color: #c00
+}
+
+.pList li.load {
+    padding: 80px 0 50px;
+    text-align: center;
+    font-size: 30px;
+    border-bottom: none
+}
+
+.pages {
+    float: right;
+    text-align: right
+}
+
+.topList {
+}
+
+.topList li {
+    height: 28px;
+    line-height: 28px;
+    overflow: hidden
+}
+
+.topList li em {
+    width: 10px;
+    height: 28px;
+    font: italic bold 16px/28px Arial, Helvetica, sans-serif;
+    color: #aaa;
+    text-align: right;
+    letter-spacing: -3px;
+    display: inline-block;
+    float: left;
+    overflow: hidden;
+    padding: 0 15px 0 0
+}
+
+.topList li .orange {
+    color: #f60
+}
+
+.topList .price {
+    float: right;
+    color: #787876
+}
+
+.topWrap {
+    margin-top: 10px;
+}
+
+.topWrap .modBoxF {
+    width: 308px;
+    border: none;
+    width: 323px;
+    display: none
+}
+
+.topWrap .modBoxF .thF {
+    background: none;
+    border-bottom: 2px solid #2a5ab3;
+    color: #038;
+    padding: 0
+}
+
+.topWrap .modBoxA {
+    margin-bottom: 0;
+}
+
+.topWrap .nb {
+    margin-bottom: 0
+}
+
+.bbsInfo .thF, .expert .thF {
+    background: none;
+    border-bottom: 2px solid #2a5ab3;
+    color: #038;
+    padding: 0
+}
+
+.bbsInfo, .expert {
+    margin-bottom: 0
+}
+
+.bbsInfo table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px
+}
+
+.bbsInfo .tbF {
+    padding: 5px
+}
+
+.bbsInfo td {
+    line-height: 40px;
+    border-bottom: 1px dashed #d4ddec
+}
+
+.bbsInfo th {
+    line-height: 24px;
+    border-bottom: 1px solid #ddd;
+    text-indent: 5px;
+    background: #f5f5f5;
+    font-weight: normal;
+    color: #777;
+    text-align: left
+}
+
+.bbsInfo .title {
+    font-size: 14px
+}
+
+.bbsInfo .poster {
+    text-indent: 5px
+}
+
+.bbsInfo .poster a {
+    color: #00349a;
+    height: 16px;
+    line-height: 16px
+}
+
+.bbsInfo .poster a:hover {
+    color: #f60
+}
+
+.bbsInfo .poster .userico {
+    display: inline-block;
+    height: 16px;
+    line-height: 16px;
+    padding-left: 20px;
+    background: url(http://www1.pconline.com.cn/2012/channel/zzzj/images/listico.png) no-repeat 0 -29px
+}
+
+.bbsInfo .time {
+    color: #777
+}
+
+.bbsInfo .fuc a {
+    float: right;
+    margin-right: 10px;
+    padding: 0 15px;
+    height: 22px;
+    line-height: 22px;
+    width: auto
+}
+
+.bbsInfo .fuc .mYellow {
+    background: #f60;
+    color: #fff
+}
+
+.bbsInfo .fuc .mBlue {
+    background: #1b4798;
+    color: #fff
+}
+
+.bbsInfo .fuc {
+    height: 22px;
+    padding-top: 6px
+}
+
+.bbsInfo tfoot td {
+    border: none;
+    padding-right: 20px;
+    background: #f5f5f5;
+    text-align: right;
+    font-size: 14px
+}
+
+.cap {
+    cursor: pointer;
+    color: #777
+}
+
+/* 更多品牌 */
+#picker .tbody {
+    position: relative;
+    z-index: 2;
+    width: 501px;
+}
+
+.filter .tc {
+    position: relative;
+    width: 60px;
+    height: 22px;
+    float: left;
+}
+
+.filter .tc .more {
+    padding: 0 12px;
+    background: url(http://www1.pconline.com.cn/2012/channel/zzzj/images/listico.png) no-repeat 26px -405px;
+    float: left;
+}
+
+.filter .ls {
+    background: #3a67b1;
+    color: #fff;
+    z-index: 2
+}
+
+.filter .ls .more {
+    background-position: 26px -424px
+}
+
+.moreBrand {
+    display: none;
+    position: absolute;
+    right: 0px;
+    border: 2px solid #3a67b1;
+    top: 20px;
+    z-index: 2;
+    width: 110px;
+    height: 150px;
+    overflow: hidden;
+    overflow-y: auto;
+    background: #fff
+}
+
+.moreBrand .content {
+    width: 82px;
+    background: #fff;
+    padding: 5px;
+    overflow: hidden
+}
+
+.moreBrand a {
+    float: left;
+    width: 75px;
+    height: 24px;
+    padding: 0 5px;
+    line-height: 24px;
+    overflow: hidden
+}
+
+.moreBrand a:hover {
+    background: #fcfbf6
+}
+
+/* 全屏按钮 */
+.chaBot .btn {
+    line-height: 25px
+}
+
+/*Tuesday, 08-Jul-2014 17:42:33 CST*/
+/*****modBoxA(modBoxA.css 框架)*****/
+.modBoxA {
+    margin-bottom: 10px;
+}
+
+.thA {
+    height: 33px;
+    line-height: 33px;
+    border-bottom: 2px solid #2a5ab3;
+    overflow: hidden
+}
+
+.thA .mark {
+    padding-left: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #038
+}
+
+.thA .mark a {
+    color: #038
+}
+
+.thA .mark a:hover {
+    color: #f60
+}
+
+.thA .subMark {
+    padding-top: 1px;
+}
+
+.bigTit {
+    height: 43px;
+    line-height: 43px;
+}
+
+.bigTit .mark {
+    font: normal 22px/43px "Microsoft YaHei"
+}
+
+.bigTit .subMark {
+    padding-top: 6px;
+}
+
+/*modBoxA 红色标题*/
+.redTit {
+    border-color: #c00
+}
+
+.redTit .mark a {
+    color: #c00
+}
+
+.redTit .mark a:hover {
+    color: #f60
+}
+
+.main {
+    width: 990px;
+    overflow: hidden
+}
+
+.ln22 {
+    margin-left: 10px
+}
+
+.ln22 li {
+    padding-left: 12px;
+    background: url(http://www1.pconline.com.cn/2012/channel/images/channel_icon.png) no-repeat -5px -69px;
+    line-height: 26px
+}
+
+/*list*/
+.path {
+    padding: 8px 0;
+    text-indent: 5px;
+    color: #777
+}
+
+.path a {
+    color: #038
+}
+
+.filter .tbG {
+    padding: 10px 15px;
+    line-height: 25px
+}
+
+.filter .cap {
+    color: #777
+}
+
+.filter a {
+    padding: 2px 5px
+}
+
+.filter .selected {
+    font-weight: normal;
+    color: #fff;
+    background: #f60;
+    background: #f60;
+}
+
+.solutions .thF {
+    padding-right: 0;
+    position: relative
+}
+
+.solutions .tbF {
+    padding: 0 10px
+}
+
+.solutions .thF select {
+    margin: 2px 5px -2px 0
+}
+
+.solutions .thF .mark {
+    position: absolute;
+    padding-right: 10px;
+    border-bottom: 2px solid #2a5ab3;
+    height: 30px
+}
+
+.solutions .thF .sType {
+    position: absolute;
+    height: 31px;
+    right: 0
+}
+
+.solutions .thF .submark {
+    width: 430px
+}
+
+.sList {
+    line-height: 22px;
+    color: #777
+}
+
+.sList li {
+    margin: 13px 0 13px;
+    padding: 0;
+    border-bottom: 1px dashed #ddd;
+    zoom: 1; /*ie6 bug*/
+    padding-bottom: 13px;
+}
+
+.sList .pages {
+    border: none;
+    margin: 0;
+    padding: 0
+}
+
+.sList li .img {
+    float: left;
+    width: 250px;
+    overflow: hidden;
+    height: 90px;
+    padding-top: 10px
+}
+
+.sList li .img a {
+    display: inline-block;
+    width: 280px
+}
+
+.sList li .img a img {
+    float: left;
+}
+
+.sList li .mid {
+    float: left;
+    width: 348px
+}
+
+.sList li .rig {
+    float: right;
+    width: 132px
+}
+
+.sList li strong {
+    font-size: 14px;
+    display: block;
+    padding-bottom: 3px;
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden
+}
+
+.sList li strong a {
+    color: #038
+}
+
+.sList li strong a:hover {
+    color: #f60
+}
+
+.ninfo {
+    padding-bottom: 3px;
+    height: 22px
+}
+
+.ninfo em {
+    display: inline-block;
+    padding: 0 20px;
+    height: 22px;
+    line-height: 22px;
+    background: url(http://www1.pconline.com.cn/2012/channel/zzzj/images/listico.png) no-repeat 0 0
+}
+
+.ninfo .ic1 {
+    background-position: 0 3px
+}
+
+.ninfo .ic2 {
+    background-position: 0 -25px
+}
+
+.ninfo .ic3 {
+    background-position: 0 -59px
+}
+
+.sList li .dis {
+    height: 48px;
+    overflow: hidden
+}
+
+.sList li .dis i {
+    display: inline-block;
+    width: 170px;
+    float: left;
+    height: 22px;
+    line-height: 22px;
+    padding-right: 4px;
+    color: #333
+}
+
+.sList li .dis i em {
+    color: #777
+}
+
+.sList li .rig .price {
+    color: #c00;
+    font-family: "微软雅黑";
+    text-align: center;
+    display: block;
+    font-size: 14px;
+    padding: 12px 0 12px 0
+}
+
+.sList li .rig .price em {
+    font-size: 24px
+}
+
+.sList li .rig .tp span {
+    display: inline-block;
+    width: 60px;
+    height: 20px;
+    line-height: 20px;
+    padding-bottom: 26px;
+    text-align: center;
+    border: 1px solid #dbdada;
+    background: url(http://www1.pconline.com.cn/2012/channel/zzzj/images/listico.png) no-repeat 21px -92px;
+    background-color: #f5f5f5;
+    margin-right: -1px;
+    float: left
+}
+
+.sList li .rig .tp .fan {
+    background-position: 21px -154px
+}
+
+.sxtj {
+    border: 1px solid #c6d3e6;
+    background: #ecf0f9;
+    margin-bottom: 10px
+}
+
+.sxtj .thG {
+    background: none;
+    width: auto;
+    border-bottom: none;
+    height: 31px;
+    line-height: 31px;
+    overflow: hidden
+}
+
+.sxtj .tbG {
+    padding: 0 5px 5px 5px;
+    border: none;
+    width: auto
+}
+
+.sxtj .tbG ul {
+    background: #fff;
+    width: auto
+}
+
+.sxtj .tbG ul li {
+    border-top: 1px solid #d4ddec;
+    height: 38px;
+    line-height: 38px;
+    padding-left: 10px
+}
+
+.sxtj .tbG ul li a {
+    color: #038
+}
+
+.sxtj .tbG ul li a:hover {
+    color: #f60
+}
+
+.sxtj .tbG ul li .selected {
+    color: #fff
+}
+
+.sxtj .tbG ul li .cap {
+    cursor: default
+}
+
+.thTop {
+    border-bottom: 2px solid #2A5AB3;
+    height: 43px;
+    line-height: 43px;
+    overflow: hidden;
+    font: 22px/43px "Microsoft YaHei";
+    color: #038;
+    padding-left: 10px;
+    margin-bottom: 10px
+}
+
+.pxb .thF {
+    height: 34px;
+    border-bottom: 2px solid #2a5ab3;
+    position: relative;
+    background: none;
+    padding: 0
+}
+
+.pxb .thF .mark {
+    position: absolute;
+    border-bottom: 2px solid #2a5ab3
+}
+
+.pxb .tbF {
+    background: #ecf0f9
+}
+
+/*.pxb .modBoxF .tbF li{height:28px; line-height:28px}*/
+
+.solutions .thF .time, .solutions .thF .sType {
+    float: left
+}
+
+.solutions .thF .time {
+    margin-right: 10px
+}
+
+.solutions .thF {
+    height: 30px;
+    line-height: 30px;
+    background: none;
+    border-bottom: 2px solid #d4ddec;
+    padding: 0
+}
+
+.mb0 {
+    margin-bottom: 0
+}
+
+.tfoot {
+    text-align: center;
+    padding-bottom: 30px
+}
+
+.tfoot .left {
+    float: left;
+    width: 300px;
+    color: #777;
+    text-align: left
+}
+
+.tfoot .print {
+    display: inline;
+    float: leftwidth: 350px;
+    margin-right: -10px
+}
+
+.tfoot .print a {
+    float: left;
+    margin-right: 10px;
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    background: #f60;
+    color: #fff
+}
+
+.tfoot .mid {
+    float: left
+}
+
+.tfoot .mid span {
+    height: 28px;
+    float: left;
+    font-size: 16px;
+    margin-right: -1px;
+    color: #777;
+    font-family: "微软雅黑";
+    height: 28px;
+    border: 1px solid #dbdada;
+    background: url(http://www1.pconline.com.cn/2012/channel/zzzj/images/listico.png) no-repeat;
+    background-color: #f5f5f5;
+    padding: 0 12px 0 36px;
+    line-height: 28px;
+    cursor: pointer
+}
+
+.tfoot .mid .agree {
+    background-position: 10px -109px
+}
+
+.tfoot .mid .disAgree {
+    background-position: 10px -172px
+}
+
+.dropTest {
+    height: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 30px;
+    background: #ffedcf
+}
+
+.dropTest a {
+    display: block;
+    width: 110px;
+    margin: 0 auto;
+    color: #df1308;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 33px
+}
+
+.dropTest s {
+    float: right;
+    width: 11px;
+    height: 6px;
+    margin-top: 13px;
+    font-size: 0;
+    background: url(http://www1.pconline.com.cn/2012/channel/zzzj/images/listico.png) no-repeat -9px -268px
+}
+
+/* 预览页配置单信息 */
+.paperInfo {
+    border: 1px solid #DDDDDD;
+    padding: 10px;
+}
+
+.addition {
+    margin: 0;
+    padding: 0;
+    width: 441px;
+    overflow: hidden
+}
+
+.addition li {
+    height: 30px;
+    line-height: 30px;
+    width: 100%;
+    float: left
+}
+
+.addition .type {
+    height: 61px;
+    line-height: 24px;
+    margin-bottom: 10px;
+    width: 350px
+}
+
+.addition .type .cap {
+    height: 61px;
+    line-height: 26px
+}
+
+.addition .type i {
+    display: inline-block;
+    float: left;
+    width: 79px;
+    height: 24px;
+    border: 2px solid #dae1ee;
+    text-align: center;
+    margin: 0 5px 5px 0;
+    color: #038;
+    cursor: pointer
+}
+
+.addition .type i:hover {
+    border-color: #1b4798;
+    text-decoration: none
+}
+
+.addition .type .select {
+    border-color: #1b4798;
+    background: url(http://www1.pconline.com.cn/2012/channel/zzzj/images/listico.png) no-repeat 59px -365px
+}
+
+.addition .des {
+    height: 120px;
+    margin-bottom: 10px
+}
+
+.addition .cap {
+    float: left;
+    width: 75px;
+    text-align: right;
+    color: #333;
+    line-height: 30px
+}
+
+.addition .title input {
+    width: 251px;
+    height: 20px;
+    line-height: 20px;
+    border: 1px solid #99add4;
+    padding: 0 3px;
+    margin-top: 3px
+}
+
+.addition select {
+    margin-top: 4px
+}
+
+.addition textarea {
+    width: 251px;
+    height: 110px;
+    border: 1px solid #99add4;
+    padding: 0 3px;
+    margin-top: 10px;
+    background: none
+}
+
+.addition .yzm {
+    width: 72px;
+    height: 20px;
+    padding: 0 3px;
+    border: 1px solid #99add4;
+    float: left;
+    margin-top: 3px
+}
+
+.addition .yzmpic {
+    float: left;
+    display: inline-block;
+    margin: 3px 0 0 5px
+}
+
+}
+.addition .btn {
+    margin-left: 6px
+}
+
+.addition .fuc {
+    padding: 10px 0 10px 5px;
+    background: #ecf0f8;
+}
+
+.addition .fuc input {
+    width: 135px;
+    height: 30px;
+    background: #1b4798;
+    display: inline-block;
+    margin-right: 10px;
+    float: left;
+    color: #fff;
+    border: none
+}
+
+.addition .fuc input:hover {
+    background: #3a67b1
+}
+
+.addition .fuc .preview {
+    padding: 0;
+    margin: 0
+}
+
+.addition .fuc .submit {
+    background: #ff802b
+}
+
+/* 打印预览页样式覆盖 */
+.preview {
+    padding: 5px;
+    text-align: center
+}
+
+.preview .layAB {
+    margin: 0 auto;
+    display: block;
+    float: none;
+    width: 730px;
+    text-align: left
+}
+
+.preview .summary img {
+    width: 100px
+}
+
+/* 游戏评测 */
+.testGame {
+    border: 1px solid #ddd
+}
+
+.testGame .thF {
+    height: 30px;
+    background: #f5f5f5;
+    text-align: center;
+    line-height: 30px;
+    padding: 0
+}
+
+.testGame .thF .mark {
+    float: none;
+    margin: 0;
+    display: inline-block;
+    font-size: 14px;
+    color: #777;
+    width: 140px;
+    height: 30px
+}
+
+.testGame .tbF {
+    padding: 10px
+}
+
+.testGame a {
+    color: #000
+}
+
+.testGame .selector a {
+    white-space: nowrap;
+}
+
+.testGame .selector .contentdiv a {
+    display: inline-block;
+    height: 22px;
+    line-height: 22px;
+    padding: 0 5px;
+}
+
+.testGame .selector .contentdiv a:hover {
+    background: #fee8da;
+    color: #f60
+}
+
+.testGame .btnSwitch {
+    width: 11px;
+    float: right;
+    height: 6px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 11px 0 0 5px;
+    background: url(http://www1.pconline.com.cn/2012/channel/zzzj/images/listico.png) no-repeat -9px -293px
+}
+
+.testGame .selector {
+    position: relative;
+    height: 65px;
+    border-bottom: 1px dashed #ddd;
+    z-index: 10
+}
+
+.testGame .btnSelector {
+    position: relative;
+    float: left;
+    width: 150px;
+    height: 51px;
+    display: inline-block;
+    margin-right: 25px;
+    background: #1b4798;
+    font-family: "微软雅黑";
+    font-size: 20px;
+    color: #fff;
+    line-height: 51px;
+    text-align: center
+}
+
+.testGame .caption {
+    float: left;
+    margin-bottom: 30px;
+    margin-right: 8px
+}
+
+.testGame .hotGames {
+    color: #777;
+    line-height: 24px
+}
+
+.testGame .moreGames {
+    position: absolute;
+    left: 150px;
+    top: 0;
+    z-index: 2;
+    border: 2px solid #3a67b1;
+    background: #fff;
+    width: 566px;
+    overflow: hidden
+}
+
+.testGame .gameSelector {
+    position: relative;
+}
+
+.testGame .gameSelector .tab {
+    height: 31px;
+    background: #ecf0f8
+}
+
+.testGame .tab .toc {
+    float: left;
+    display: block;
+    display: inline-block;
+    width: 188px;
+    height: 31px;
+    line-height: 31px;
+    border: 1px solid #dbe3f0;
+    border-bottom: none;
+    border-top: none;
+    margin-left: -1px;
+    text-align: center;
+    font-size: 14px;
+    background: #ecf0f8
+}
+
+.testGame .tab .toc .bold {
+    font-weight: bold
+}
+
+.testGame .selector .contentdiv .toc, .testGame .selector .contentdiv .bold {
+    display;
+    height: auto;
+    line-height: normal;
+    color: #333;
+    font-family: "微软雅黑";
+    font-weight: normal;
+    padding: 0 1px
+}
+
+.testGame .selector .contentdiv .selected {
+    color: #038
+}
+
+.testGame .tab .selected {
+    position: relative;
+    height: 31px;
+    background: #fff
+}
+
+.testGame .tab .selected:hover {
+    text-decoration: none;
+    color: #038;
+    cursor: default;
+    background: #fff
+}
+
+.testGame .tab .last {
+    border-right: none
+}
+
+.testGame .contentdiv {
+    padding: 8px;
+    color: #777;
+    line-height: 20px
+}
+
+.testGame .subTab {
+    height: 20px;
+    line-height: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-left: 10px;
+    padding-bottom: 5px
+}
+
+.testGame .subTab a {
+    float: left;
+    margin-right: 8px;
+    font-weight: bold;
+    color: #013299;
+    font-family: arial;
+    font-size: 14px
+}
+
+.testGame .g2, .testGame .g3 {
+    padding: 5px;
+    line-height: 20px
+}
+
+.testGame .detail .view {
+    color: #f60;
+    white-space: nowrap;
+}
+
+.testGame .subContent {
+}
+
+.testGame .result {
+    padding-top: 10px;
+    overflow: hidden
+}
+
+.testGame .result dt {
+    float: left;
+    width: 156px;
+    margin-right: 15px;
+    text-align: center;
+    line-height: 24px;
+    margin-top: 5px
+}
+
+.testGame .result dt .links a {
+    color: #00339c
+}
+
+.testGame .result .thumb {
+    padding: 2px
+}
+
+.testGame .result .thumb img {
+    width: 150px
+}
+
+.testGame .result .title {
+    height: 25px;
+    line-height: 25px;
+    background: #f0f0f0;
+    color: #333;
+    overflow: hidden
+}
+
+.testGame .detail {
+    text-indent: 24px;
+    color: #777;
+    line-height: 20px
+}
+
+.testGame .score {
+    margin-top: 12px
+}
+
+.testGame .score .overview {
+    font-size: 14px
+}
+
+.testGame .score .bold {
+    font-weight: bold
+}
+
+.testGame .score .gray {
+    color: #777
+}
+
+.testGame .score .num {
+    font-size: 20px;
+    font-family: Arial
+}
+
+.testGame .bar {
+    position: relative;
+    height: 35px;
+    margin: 5px 0 10px;
+    background: url(http://www1.pconline.com.cn/2010/images/mydiy/icons_game.png) no-repeat 0 -44px;
+    overflow: hidden
+}
+
+.testGame .bar .cover {
+    height: 35px;
+    background: url(http://www1.pconline.com.cn/2010/images/mydiy/icons_game.png) no-repeat 0 0
+}
+
+.testGame .miniBar {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    width: 165px;
+    height: 13px;
+    margin-bottom: 2px;
+    margin-right: 8px;
+    background: url(http://www1.pconline.com.cn/2010/images/mydiy/icons_game.png) no-repeat -250px -100px;
+}
+
+.testGame .miniBar .cover {
+    height: 13px;
+    background: url(http://www1.pconline.com.cn/2010/images/mydiy/icons_game.png) no-repeat 0 -100px;
+    overflow: hidden;
+    color: #fff
+}
+
+.testGame .miniBar .cover span {
+    padding: 1px 3px;
+    line-height: 15px;
+    font-weight: bold
+}
+
+.testGame .scoreDetail li {
+    height: 13px;
+    padding-top: 10px
+}
+
+.testGame .scoreDetail li.last {
+    height: 33px;
+    padding-top: 12px
+}
+
+.testGame .cap {
+    height: 30px;
+    padding-left: 20px;
+    line-height: 30px;
+    font-weight: bold;
+    font-size: 14px;
+    background: url(http://www1.pconline.com.cn/2010/images/mydiy/icons_game.png) no-repeat 0 -260px;
+}
+
+.testGame .result dd {
+    float: left;
+    width: 510px
+}
+
+.testGame .tbF {
+    height: 1%
+}
+
+.testGame .result .info {
+    position: relative;
+    height: 30px;
+    line-height: 28px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    background: url(http://www1.pconline.com.cn/2010/images/mydiy/icons_game.png) no-repeat 0 -300px;
+    width: 507px
+}
+
+.testGame .result .info .num {
+    position: relative;
+    bottom: -2px
+}
+
+.testGame .result .info .arrow {
+    position: absolute;
+    left: 100px;
+    bottom: -13px;
+    width: 15px;
+    height: 15px;
+    background: url(http://www1.pconline.com.cn/2010/images/mydiy/icons_game.png) no-repeat 0 -350px;
+    overflow: hidden;
+    line-height: 0
+}
+
+.testGame .result .info .rightCorner {
+    float: right;
+    width: 12px;
+    height: 30px;
+    background: url(http://www1.pconline.com.cn/2010/images/mydiy/icons_game.png) no-repeat right -300px;
+}
+
+.testGame .bar img {
+    position: absolute;
+    left: 220px;
+    top: 14px
+}
+
+.testGame .result {
+    overflow: visible
+}
+
+.testGame .scoreDetail .btn {
+    margin-right: 15px
+}
+
+.dropTest a {
+    width: 150px
+}
+
+.fbl {
+    padding-bottom: 10px
+}
+
+.fbl .btn {
+    font-family: "微软雅黑";
+    width: 76px;
+    height: 22px;
+    line-height: 22px;
+    background: #dae1ee;
+    color: #038
+}
+
+.fbl .mYellow {
+    color: #fff;
+    background: #1b4798
+}
+
+h2 {
+    font-family: "微软雅黑";
+    font-size: 24px;
+    line-height: 48px;
+    text-align: center
+}
+
+.show {
+    padding: 0 10px;
+}
+
+.show .thead {
+    border-bottom: 1px dotted #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    width: 730px;
+    overflow: hidden
+}
+
+.show .summary {
+    line-height: 28px;
+    width: 730px;
+    overflow: hidden
+}
+
+.show .info {
+    width: auto;
+    margin-left: 0;
+    margin-top: 15px
+}
+
+.show .info .tbF {
+    padding: 0;
+    border: 1px solid #708cc4
+}
+
+.show .info .thF {
+    height: 31px;
+    line-height: 31px;
+    background: #294f9c;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center
+}
+
+.show .info .tbF table {
+    background: none
+}
+
+.show .info .tbF table td {
+    height: 36px;
+    border-bottom: 1px dotted #d4ddec;
+    line-height: 36px;
+    text-align: left;
+    color: #333
+}
+
+.show .info .tbF table th {
+    height: 28px;
+    line-height: 28px;
+    text-align: left;
+    background: #ecf0f8;
+    color: #777
+}
+
+.show .info .tbF table .cent {
+    text-align: center
+}
+
+.show .info .tbF table .cright {
+    text-align: right;
+    padding-right: 10px;
+    background: #ecf0f8
+}
+
+.show .info .tbF .final {
+    font-size: 26px;
+    font-family: "微软雅黑";
+    font-weight: normal
+}
+
+.show .btn {
+    display: inline-block;
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    background: #dae1ee;
+    color: #038
+}
+
+.show .btn:hover, .show .gyellow {
+    background: #f60;
+    color: #fff
+}
+
+/*百度分享*/
+.fl {
+    float: left
+}
+
+body #bdshare {
+    float: left;
+    padding-bottom: 0;
+    color: #777
+}
+
+body #bdshare .iTxt {
+    float: left;
+    padding-top: 6px;
+}
+
+body #bdshare a {
+    color: #777
+}
+
+.paper .login {
+    padding: 20px 5px 12px;
+    height: 52px
+}
+
+.paper .login span {
+    display: inline-block;
+    height: 22px;
+    text-align: center;
+    width: 34px;
+    float: left;
+    line-height: 22px
+}
+
+.paper .login .sinput {
+    width: 122px;
+    height: 20px;
+    padding: 0 3px;
+    border: 1px solid #99add4;
+    float: left;
+    display: inline-block;
+    margin-right: 5px
+}
+
+.paper .login .dl {
+    border: none;
+    width: 54px;
+    height: 22px;
+    background: #1b4798;
+    color: #fff;
+    line-height: 22px
+}
+
+.paper .rdis {
+    line-height: 24px;
+    padding: 5px 5px 0;
+    color: #777
+}
+
+.paper .rdis a {
+    color: #f60
+}
+
+.nli .img {
+    width: 115px;
+    float: left;
+    margin: 0;
+    height: 85px;
+    position: relative
+}
+
+.nli .img img {
+    border: none;
+    margin-top: 5px
+}
+
+.nli .img .htb {
+    position: absolute;
+    top: -20px;
+    left: -20px
+}
+
+.nli .mid {
+    width: 283px;
+    float: left;
+    height: 85px
+}
+
+.nli .mid strong {
+    font-family: "微软雅黑";
+    font-size: 14px;
+    display: block;
+    padding-bottom: 5px;
+    height: 22px;
+    line-height: 22px;
+    overflow: hidden
+}
+
+.nli .mid i {
+    width: 140px;
+    height: 20px;
+    overflow: hidden;
+    line-height: 20px;
+    float: left;
+    display: inline-block;
+    color: #333
+}
+
+.nli .mid .mcs {
+    color: #038
+}
+
+.nli .mid .mcs:hover {
+    color: #f60
+}
+
+.nli .mid i em {
+    color: #777
+}
+
+.nli .rig {
+    width: 95px;
+    float: right;
+    height: 85px;
+    text-align: left
+}
+
+.nli .rig .price {
+    display: block;
+    height: 34px;
+    line-height: 34px;
+    width: 88px;
+    float: left;
+    padding-top: 12px;
+    font-size: 22px;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: normal
+}
+
+.nli .rig .price em {
+    font-size: 14px
+}
+
+.nli .rig .fun {
+    display: block
+}
+
+.nli .rig .fun a {
+    display: inline-block;
+    height: 22px;
+    text-align: center;
+    width: 88px;
+    background: #dae1ee;
+    color: #f038
+}
+
+.nli .rig .fun a:hover {
+    background: #1B4798;
+    color: #fff
+}
+
+#pListHead em {
+    color: #777;
+    font-size: 12px;
+    font-weight: normal
+}
+
+#listBy {
+    display: inline-block
+}
+
+/*Monday, 04-Feb-2013 12:26:54 CST*/
+/*分页列表模块*/
+.pages {
+    font-size: 0
+}
+
+.pages a, .pages span {
+    display: block;
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+    overflow: hidden;
+    background: #eee;
+    margin: 0 2px;
+    padding: 0 10px;
+    vertical-align: top;
+    font-size: 12px
+}
+
+.pages span {
+    height: 25px;
+    line-height: 25px;
+    border: none;
+    background: none
+}
+
+.pages .total {
+    margin-left: 15px;
+}
+
+.pages .selected {
+    height: 25px;
+    line-height: 25px;
+    padding: 0 10px;
+    border: none;
+    background: #f60;
+    color: #fff;
+}
+
+.pages .selected:hover {
+    color: #fff;
+    text-decoration: none
+}
+
+.pages .pre, .pages .next {
+    display: inline-block;
+    width: 45px;
+    height: 25px;
+    line-height: 25px;
+    padding-left: 20px;
+    border: none;
+    text-align: center;
+    background: url(http://www1.pconline.com.cn/2012/channel/zzzj/images/listico.png) no-repeat -4px -229px;
+    background-color: #eee
+}
+
+.pages .next {
+    background-position: 44px -203px;
+    padding-left: 10px;
+    padding-right: 20px
+}
+
+/* 弹出框样式 */
+.popup .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    *filter: alpha(opacity=50);
+    -moz-opacity: 0.5;
+    opacity: 0.5;
+    z-index: 99
+}
+
+.popup .popupWrap {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    padding: 5px;
+    z-index: 100;
+    background: url(http://www1.pconline.com.cn/2012/channel/zzzj/images/covbg.png);
+    _background: none;
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://www1.pconline.com.cn/2012/channel/zzzj/images/covbg.png', sizingMethod='crop');
+}
+
+.popup .header {
+    height: 34px;
+    line-height: 34px;
+    background: #fff;
+    border-bottom: 1px solid #eee
+}
+
+.popup .title {
+    display: inline;
+    float: left;
+    padding-left: 20px;
+    font-weight: bold;
+    background: none
+}
+
+.popup .content {
+    padding: 50px 10px 50px 60px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    background: url(http://www1.pconline.com.cn/2012/channel/zzzj/images/jtt.png) no-repeat 26px center;
+    background-color: #fff;
+}
+
+.popup .close {
+    float: right;
+    width: 20px;
+    height: 20px;
+    margin: 5px 5px 0 0;
+    background: white;
+    display: block;
+    background: url(http://www1.pconline.com.cn/2012/channel/zzzj/images/mycloas.png) no-repeat center center
+}
+
+.popup .footer {
+    height: 30px;
+    padding-left: 150px;
+    overflow: hidden;
+    background: #fff;
+    padding-bottom: 10px
+}
+
+.popup .footer div {
+    height: 1px; /*hack ie*/
+}
+
+.popup .adaBtn {
+    float: left;
+    height: 22px;
+    margin: 0 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    line-height: 22px;
+    *line-height: 22px;
+    overflow: hidden;
+    color: #fff;
+    background: #f60;
+    text-align: center;
+}
+
+/*.popup .adaBtn s {float:left; width:2px; height:20px; margin-right:10px; margin-left:0; font-size:2px; }*/
+
+/* 专业评测，后台合并页面 */
+.expert .caption {
+    display: none
+}
+
+.expert .tbF {
+    padding-top: 10px;
+    line-height: 24px;
+    background: #ecf0f8;
+    color: #f60
+}
+
+.expert .p_135 {
+    margin-bottom: 10px;
+    text-align: center
+}
+
+.expert .bottom-mess {
+    text-align: right
+}
+
+.expert .tbF p img {
+    border: 1px solid #ddd;
+    padding: 2px;
+    background: white
+}
+
+.chaNavEx1 {
+    height: 40px;
+    line-height: 40px;
+    background: url(http://www1.pconline.com.cn/pc2010/block/images/nav/nav_bg2011.png) no-repeat;
+}
+
+.chaNavEx1 .sy {
+    margin-left: 10px;
+    margin-right: 0;
+}
+
+.chaNavEx1 .sy a {
+    display: block;
+}
+
+.chaNavEx1 i, .chaNavEx1 .sy {
+    background: url(http://www1.pconline.com.cn/pc2010/block/images/nav/nav_x2012.png) no-repeat right -231px;
+    height: 40px;
+}
+
+.chaNavEx1 i a {
+    height: 40px;
+}
+
+.chaNavEx1 i a:hover, .chaNavEx1 .sy a:hover {
+    color: #FF6;
+    background: none;
+    text-decoration: underline;
+}
+
+.chaNavEx1 span i {
+    background: none;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.chaNavEx1 span i a:hover {
+    background: none;
+    text-decoration: underline;
+}
+
+.chaNavEx1 .current {
+    background: url(http://www1.pconline.com.cn/mobile2012/nav/images/nav_bg2012.png) no-repeat left -100px;
+    padding-left: 15px;
+}
+
+.chaNavEx1 b.current {
+    width: 50px;
+}
+
+.chaNavEx1 .current a {
+    background: url(http://www1.pconline.com.cn/mobile2012/nav/images/nav_bg2012.png) no-repeat -1px -100px;
+    padding: 0 15px 0 0;
+    color: #fff;
+}
+
+.chaNavEx1 .current a:hover {
+    background: url(http://www1.pconline.com.cn/mobile2012/nav/images/nav_bg2012.png) no-repeat 1px -100px;
+    color: #fff;
+}
+
+.tabmod {
+    width: 990px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-bottom: 10px
+}
+
+.tabmod .tabnav {
+    font-family: "微软雅黑";
+    font-size: 18px;
+    color: #038;
+    text-align: left;
+    height: 39px;
+    line-height: 39px;
+    text-indent: 10px
+}
+
+.tabmod .tabnr {
+    padding: 0 5px
+}
+
+.tabmod .tabnr .tabHead {
+    width: 1000px
+}
+
+.tabmod .tabHead span {
+    display: inline-block;
+    width: 100px;
+    height: 32px;
+    line-height: 32px;
+    font-family: "微软雅黑";
+    font-size: 18px;
+    color: #038;
+    text-align: center;
+    cursor: pointer;
+    background-color: #dae1ee;
+    margin: 0 10px 10px 0;
+    float: left
+}
+
+.tabmod .tabHead span:hover {
+    background-color: #3a67b1;
+    color: #fff
+}
+
+.tabmod .tabHead .picked {
+    background: url(http://www1.pconline.com.cn/2012/channel/zzzj/images/listico.png) no-repeat 80px -324px;
+    background-color: #dae1ee;
+    color: #038
+}
+
+.tabmod .tabHead .selected {
+    background: url(http://www1.pconline.com.cn/2012/channel/zzzj/images/listico.png) no-repeat 80px -324px;
+    background-color: #3a67b1;
+    color: #fff
+}
+
+.tabpz {
+    width: 475px;
+}
+
+.tabpz .thead {
+    font-family: "微软雅黑";
+}
+
+.tabpz .thead .th {
+    color: #038;
+    font-size: 18px;
+    height: 30px;
+    line-height: 30px
+}
+
+.tabpz .thead .ttab {
+    height: 32px;
+    line-height: 32px;
+    background: #ecf0f8;
+    position: relative;
+    overflow: hidden
+}
+
+.tabpz .thead .ttab span {
+    display: inline-block;
+    width: 95px;
+    text-align: center;
+    color: #333;
+    height: 30px;
+    border-top: 2px solid #d4ddec;
+    line-height: 30px;
+    float: left;
+    font-size: 18px;
+    cursor: pointer
+}
+
+.tabpz .thead .ttab span em {
+    font-size: 12px
+}
+
+.tabpz .thead .ttab .on {
+    color: #038;
+    border-top-color: #2a5ab3;
+    background: url(http://www1.pconline.com.cn/2012/channel/images/channel_icon.png) no-repeat center -34px
+}
+
+.tabpz .tbody {
+    height: 385px;
+    background: url(http://www1.pconline.com.cn/2012/channel/zzzj/images/pzico.png) no-repeat 0 0;
+    padding: 0 5px 0 45px
+}
+
+.tabpz .tbody dt {
+    font-family: "微软雅黑";
+    font-size: 18px;
+    padding: 10px 0 5px 0;
+    line-height: 32px;
+    height: 32px;
+    overflow: hidden;
+    font-weight: 700
+}
+
+.tabpz .tbody dd {
+    height: 28px;
+    line-height: 28px;
+    margin-bottom: 1px;
+    font-size: 14px;
+    overflow: hidden
+}
+
+.tabpz .tbody dd em {
+    color: #777;
+    float: left
+}
+
+.tabpz .tbody dd a {
+    float: left
+}
+
+.tabpz .tbody i {
+    display: inline-block;
+    float: right;
+    font-family: "微软雅黑";
+    color: #c00;
+    width: 80px;
+    text-align: left
+}
+
+.tabpz .tbody dt i {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #038;
+    padding-top: 10px;
+    width: 120px
+}
+
+.tabpz .tbody dt i .userico {
+    color: #038;
+    display: inline-block;
+    height: 16px;
+    line-height: 16px;
+    padding-left: 25px;
+    white-space: nowrap;
+    background: url(http://www1.pconline.com.cn/2012/channel/zzzj/images/listico.png) no-repeat 0 -29px
+}
+
+.tabpz .tbody dl {
+    display: none
+}
+
+.tabpz .tfoot {
+    height: 38px;
+    line-height: 38px;
+    background: #ecf0f8;
+    padding: 0 10px;
+    text-align: right;
+    font-size: 14px
+}
+
+.tabpz .tfoot .r {
+    color: #c00;
+    font-family: "微软雅黑";
+    font-weight: normal
+}
+
+.tabpz .tfoot .b {
+    font-size: 24px
+}
+
+.pxb .modBoxF {
+    width: 323px;
+    border: none
+}
+
+.tfoot #viewOpr a {
+    width: 100px
+}
+
+.tfoot .mid .link {
+    display: inline-block;
+    line-height: 28px;
+    margin-left: 10px;
+    float: left;
+    color: #038;
+    float: left
+}
+
+.tfoot .mid .link:hover {
+    color: #f60
+}
+
+.addition_show {
+    width: 750px;
+    padding-top: 10px;
+    background: #ecf0f8
+}
+
+.addition_show .type {
+    width: auto;
+    height: 29px
+}
+
+.addition_show .type i {
+    background-color: #fff
+}
+
+.addition_show .type .select {
+    background-color: #fff
+}
+
+.addition_show .title input {
+    width: 514px
+}
+
+.addition_show .des textarea {
+    width: 514px;
+    background: #fff
+}
+
+.addition_show .fuc .submit {
+    background: #1B4798
+}
+
+.addition_show .fuc a {
+    color: #1B4798
+}
+
+.addition_show .fuc, .addition_show .kbq {
+    color: #038
+}
+
+.dropTest {
+    margin-bottom: 0
+}
+
+.brand .bCap {
+    display: inline-block;
+    width: 70px;
+    text-align: right;
+    height: 28px;
+    line-height: 28px;
+    overflow: hidden;
+    float: left
+}
+
+#picker .tbody {
+    width: 515px;
+    padding: 10px 0
+}
+
+.pick {
+    position: absolute;
+    width: 184px;
+    height: 138px;
+    background: #fff;
+    display: none;
+    overflow: hidden;
+    text-align: center;
+    border: 1px solid #d8d8d8;
+    -moz-box-shadow: 0px 0px 15px #999;
+    -webkit-box-shadow: 0px 0px 15px #999;
+    box-shadow: 0px 0px 15px #999;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.pick a {
+    display: inline-block;
+    width: 164px;
+    height: 118px;
+    background: #fff;
+    padding: 10px;
+}
+
+.pick img {
+    width: auto;
+    height: 100%
+}
+
+.filter .tc {
+    float: right
+}
+
+.filter .tc .more {
+    line-height: 20px;
+    background-position: 26px -409px
+}
+
+.filter .ls .more {
+    background-position: 26px -427px
+}
+
+.moreBrand .content {
+    width: auto
+}
+
+.moreBrand {
+    width: 435px;
+    height: auto;
+    padding: 10px
+}
+
+.moreBrand .content a {
+    height: 24px;
+    line-height: 24px
+}
+
+.pick {
+    width: 284px;
+    height: 214px;
+    padding: 10px
+}
+
+.pick a {
+    width: 280px;
+    height: 210px;
+    padding: 0
+}
+
+.pick img {
+    width: 280px;
+    height: 210px
+}
+
+.bbsInfo .titA {
+    display: inline-block;
+    height: 40px;
+    overflow: hidden;
+    white-space: nowrap
+}
+
+.bbsInfo .titB {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    overflow: hidden
+}
+
+.filter .brand .content .current {
+    background: #f60;
+    color: #fff
+}
+
+.brand .bCap {
+    width: 70px
+}
+
+#picker .tbody {
+    width: 520px
+}
+
+#sbk {
+    border: 1px solid #ccc;
+    z-index: 100;
+    width: 96px;
+    line-height: 24px;
+    position: absolute;
+    display: block;
+    background: #fff;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    display: none
+}
+
+#sbk a {
+    display: inline-block;
+    float: left;
+    height: 24px;
+    padding: 0 10px;
+    background: #DAE1EE;
+    color: #333;
+    border: 1px solid #DAE1EE;
+    margin: 2px
+}
+
+#sbk a:hover {
+    background: #f60;
+    color: #fff;
+    border-color: #f60
+}
+
+.layRT {
+    height: 1194px
+}
+
+.pList li {
+    padding: 12px 10px
+}
+
+/*新增热门资讯关键词模块*/
+.pLinks a {
+    color: #333;
+    display: inline-block;
+    margin-right: 15px;
+    font: 12px/28px "Simsun"
+}
+
+.pLinks a:hover {
+    color: #f60;
+}
+
+.pLinks {
+    padding: 0 0 5px 0;
+}

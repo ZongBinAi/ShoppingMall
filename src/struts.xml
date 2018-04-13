@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+    <package name="default" namespace="/" extends="struts-default">
+        <!--全局页面-->
+        <global-results>
+            <result name="msg">/WEB-INF/jsp/msg.jsp</result>
+            <result name="login">/admin/index.jsp</result>
+        </global-results>
+
+
+        <!--配置首页访问的Action-->
+        <action name="index" class="indexAction">
+            <result name="indexSuccess">/WEB-INF/jsp/index.jsp</result>
+        </action>
+
+        <!--配置推荐页面-->
+        <action name="recom_*" class="recmoAction" method="{1}">
+            <result name="graLaDiSuccess">/WEB-INF/jsp/Graphics_ladder_diagram.jsp</result>
+            <result name="businOffSuccess">/WEB-INF/jsp/BusOffice.jsp</result>
+            <result name="homeEnjSuccess">/WEB-INF/jsp/HomeEnj.jsp</result>
+            <result name="gamePowerSuccss">/WEB-INF/jsp/GamePower.jsp</result>
+            <result name="profeDesSuccess">/WEB-INF/jsp/profeDes.jsp</result>
+            <result name="EXSuccess">/WEB-INF/jsp/EX.jsp</result>
+            <result name="simpleSuccess">/WEB-INF/jsp/simple.jsp</result>
+        </action>
+
+        <!--配置用户的Action-->
+        <action name="user_*" class="userAction" method="{1}">
+            <!--跳转到注册页面-->
+            <result name="registPageSuccess">/WEB-INF/jsp/regist.jsp</result>
+            <!--注册验证失败-->
+            <result name="registInput">/WEB-INF/jsp/regist.jsp</result>
+            <!--注册成功-->
+            <result name="registSuccess">/WEB-INF/jsp/msg.jsp</result>
+            <!--跳转到登陆页面-->
+            <result name="loginPageSuccess">/WEB-INF/jsp/login.jsp</result>
+            <!--登陆失败-->
+            <result name="loginInput">/WEB-INF/jsp/login.jsp</result>
+            <!--登陆成功-->
+            <result name="loginSuccess" type="redirectAction">index</result>
+            <!--退出登陆-->
+            <result name="quitSuccess" type="redirectAction">index</result>
+        </action>
+
+
+        <!--配置验证码的Action-->
+        <action name="checkImg" class="checkImg"></action>
+
+
+        <!--配置商品的action-->
+        <action name="product_*" class="productAction" method="{1}">
+            <!--根据一级分类id查询-->
+            <result name="findByCidSuccess">/WEB-INF/jsp/list.jsp</result>
+            <!--根据商品id查询-->
+            <result name="findByPidSuccess">/WEB-INF/jsp/desc.jsp</result>
+            <!--根据二级分类id查询-->
+            <result name="findByCsidSuccess">/WEB-INF/jsp/cslist.jsp</result>
+
+            <!--后台查询所有商品-->
+            <result name="adminFindAllSuccess">/admin/product/list.jsp</result>
+            <!--跳转到添加页面-->
+            <result name="addPageSuccess">/admin/product/add.jsp</result>
+            <!--保存商品-->
+            <result name="saveSuccess" type="redirectAction">product_adminFindAll.action?page=1</result>
+            <!--删除商品-->
+            <result name="deleteSuccess" type="redirectAction">product_adminFindAll.action?page=1</result>
+            <!--编辑（查询）商品-->
+            <result name="editSuccess">/admin/product/edit.jsp</result>
+            <!--修改商品-->
+            <result name="updateSuccess" type="redirectAction">product_adminFindAll.action?page=1</result>
+        </action>
+
+
+        <!--购物车的action-->
+        <action name="cart_*" class="cartAction" method="{1}">
+            <!--添加购物项到购物车-->
+            <result name="addCartSuccess">/WEB-INF/jsp/cart.jsp</result>
+            <!--清空购物车-->
+            <result name="clearCartSuccess">/WEB-INF/jsp/cart.jsp</result>
+            <!--删除购物项-->
+            <result name="removeCartSuccess">/WEB-INF/jsp/cart.jsp</result>
+            <!--我的购物车-->
+            <result name="myCartSuccess">/WEB-INF/jsp/cart.jsp</result>
+        </action>
+        
+        
+        <!--订单action-->
+        <action name="order_*" class="orderAction" method="{1}">
+            <!--保存订单-->
+            <result name="saveOrderSuccess">/WEB-INF/jsp/order.jsp</result>
+            <!--按照uid查找订单（header中的我的订单）-->
+            <result name="findByUidSuccess">/WEB-INF/jsp/orderlist.jsp</result>
+            <!--我的订单付款-->
+            <result name="findByOidSuccess">/WEB-INF/jsp/order.jsp</result>
+            <!--后台查询所有订单-->
+            <result name="adminFindAllSuccess">/admin/order/list.jsp</result>
+            <!--后台按状态查询订单-->
+            <result name="adminFindByStateSuccess">/admin/order/list.jsp</result>
+            <!--后台修改订单状态-->
+            <result name="adminUpdateStateSuccess" type="redirectAction">order_adminFindAll.action?page=1</result>
+            <!--前台修改订单状态-->
+            <result name="updateStateSuccess" type="redirectAction">order_findByUid.action</result>
+        </action>
+
+
+        <!--后台用户action-->
+        <action name="adminUser_*" class="adminUserAction" method="{1}">
+            <!--登陆成功-->
+            <result name="loginSuccess" type="redirect">/admin/home.jsp</result>
+            <!--查询所有用户-->
+            <result name="adminFindAllSuccess">/admin/adminuser/list.jsp</result>
+        </action>
+        
+        
+        <!--一级分类action-->
+        <action name="category_*" class="categoryAction" method="{1}">
+            <!--查询所有一级分类-->
+            <result name="adminFindAllSuccess">/admin/category/list.jsp</result>
+            <!--添加（保存）一级分类-->
+            <result name="saveSuccess" type="redirectAction">category_adminFindAll</result>
+            <!--删除一级分类-->
+            <result name="deleteSuccess" type="redirectAction">category_adminFindAll</result>
+            <!--编辑（查询）一级分类-->
+            <result name="editSuccess">/admin/category/edit.jsp</result>
+            <!--修改一级分类-->
+            <result name="updateSuccess" type="redirectAction">category_adminFindAll</result>
+        </action>
+        
+        
+        <!--二级分类action-->
+        <action name="categorySecond_*" class="categorySecondAction" method="{1}">
+            <!--查询所有二级分类-->
+            <result name="adminFindAllSuccess">/admin/categorysecond/list.jsp</result>
+            <!--二级分类跳转到添加页面的方法-->
+            <result name="addPageSuccess">/admin/categorysecond/add.jsp</result>
+            <!--保存二级分类-->
+            <result name="saveSuccess" type="redirectAction">categorySecond_adminFindAll?page=1</result>
+            <!--删除二级分类-->
+            <result name="deleteSuccess" type="redirectAction">categorySecond_adminFindAll?page=1</result>
+            <!--编辑（查询）二级分类-->
+            <result name="editSuccess">/admin/categorysecond/edit.jsp</result>
+            <!--修改二级分类-->
+            <result name="updateSuccess" type="redirectAction">categorySecond_adminFindAll?page=1</result>
+        </action>
+        
+    </package>
+</struts>
