@@ -20,7 +20,7 @@
     <div class="span24">
         <s:if test="#session.cart==null || #session.cart.cartItems.size()==0">
             <div class="step step1">
-                您还没有配置单，请先去选择配置单！
+                <a href="${ pageContext.request.contextPath }/product_findByCid.action?cid=1&page=1">您还没有配置单，请先去选择配置单!</a>
             </div>
         </s:if>
         <s:else>

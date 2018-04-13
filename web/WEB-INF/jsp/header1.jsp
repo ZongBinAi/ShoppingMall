@@ -67,7 +67,7 @@
             </ul>
         </div>
         <div class="cart">
-            <a href="${pageContext.request.contextPath}/cart_myCart.action">配置单</a>
+            <a href="${pageContext.request.contextPath}/cart_myCart.action">当前配置单</a>
         </div>
         <div class="phone">
             客服热线:

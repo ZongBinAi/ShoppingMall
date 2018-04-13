@@ -204,6 +204,19 @@
                                     <input type="submit" class="submit" value="同意以下协议并注册">
                                 </td>
                             </tr>
+                            <tr class="register">
+                                <th>&nbsp;
+
+                                </th>
+                                <td>
+                                    <dl>
+                                        <dt>已有账号，马上登陆？</dt>
+                                        <dd>
+                                            <a href="${ pageContext.request.contextPath }/user_loginPage.action">立即登陆</a>
+                                        </dd>
+                                    </dl>
+                                </td>
+                            </tr>
                             <tr>
                                 <th>&nbsp;
 

@@ -107,7 +107,7 @@
                                     <dt>还没有注册账号？</dt>
                                     <dd>
                                         立即注册即可体验在线购物！
-                                        <a href="./regist.jsp">立即注册</a>
+                                        <a href="${ pageContext.request.contextPath }/user_registPage.action">立即注册</a>
                                     </dd>
                                 </dl>
                             </td>
