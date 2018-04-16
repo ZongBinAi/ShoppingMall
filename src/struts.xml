@@ -105,6 +105,8 @@
             <result name="adminUpdateStateSuccess" type="redirectAction">order_adminFindAll.action?page=1</result>
             <!--前台修改订单状态-->
             <result name="updateStateSuccess" type="redirectAction">order_findByUid.action</result>
+            <!--前台付款页面-->
+            <result name="paySuccess">/WEB-INF/jsp/payment.jsp</result>
         </action>
 
 

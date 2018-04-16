@@ -7,11 +7,8 @@ import com.opensymphony.xwork2.ActionSupport;
 import org.apache.struts2.ServletActionContext;
 import user.User;
 import utils.PageBean;
-import utils.PaymentUtil;
 
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import java.io.IOException;
 import java.util.Date;
 import java.util.List;
 
@@ -40,11 +37,6 @@ public class OrderAction extends ActionSupport{
     }
 
     //付款成功后需要的参数
-    private String r3_Amt;
-    public void setR3_Amt(String r3_Amt) {
-        this.r3_Amt = r3_Amt;
-    }
-
     private String r6_Order;
     public void setR6_Order(String r6_Order) {
         this.r6_Order = r6_Order;
@@ -98,6 +90,11 @@ public class OrderAction extends ActionSupport{
         this.state = state;
     }
 
+    //付款密码
+    private String password;
+    public void setPassword(String password) {
+        this.password = password;
+    }
 
     /**
      * 从购物车页面保存订单
@@ -150,9 +147,7 @@ public class OrderAction extends ActionSupport{
      * 为订单付款
      * @return
      */
-    public String payOrder() throws IOException {
-        //修改订单
-        //查询这个id的订单
+    public String payOrder(){
         Order currOrder=orderService.findByOid(oid);
         currOrder.setAddr(addr);
         currOrder.setName(name);
@@ -160,43 +155,10 @@ public class OrderAction extends ActionSupport{
 
         orderService.update(currOrder);
 
-        //付款
-        //定义付款参数
-        String p0_Cmd = "Buy";
-        String p1_MerId = "10001126856";
-        String p2_Order = oid.toString();
-        String p3_Amt = "0.01";
-        String p4_Cur = "CNY";
-        String p5_Pid = "";
-        String p6_Pcat = "";
-        String p7_Pdesc = "";
-        String p8_Url = "http://localhost:8080/order_callBack.action";
-        String p9_SAF = "";
-        String pa_MP = "";
-        String pr_NeedResponse = "1";
-        String keyValue = "69cl522AV6q613Ii4W6u8K6XuW8vM1N6bFgyv769220IuYe9u37N4y7rI4Pl";
-        String hmac = PaymentUtil.buildHmac(p0_Cmd, p1_MerId, p2_Order, p3_Amt, p4_Cur, p5_Pid, p6_Pcat, p7_Pdesc, p8_Url, p9_SAF, pa_MP,pd_FrpId , pr_NeedResponse, keyValue);
+        ActionContext.getContext().getValueStack().set("order",currOrder);
+        ActionContext.getContext().getValueStack().set("pd_FrpId",pd_FrpId);
 
-        StringBuffer sb = new StringBuffer("https://www.yeepay.com/app-merchant-proxy/node?");
-        sb.append("p0_Cmd=").append(p0_Cmd).append("&");
-        sb.append("p1_MerId=").append(p1_MerId).append("&");
-        sb.append("p2_Order=").append(p2_Order).append("&");
-        sb.append("p3_Amt=").append(p3_Amt).append("&");
-        sb.append("p4_Cur=").append(p4_Cur).append("&");
-        sb.append("p5_Pid=").append(p5_Pid).append("&");
-        sb.append("p6_Pcat=").append(p6_Pcat).append("&");
-        sb.append("p7_Pdesc=").append(p7_Pdesc).append("&");
-        sb.append("p8_Url=").append(p8_Url).append("&");
-        sb.append("p9_SAF=").append(p9_SAF).append("&");
-        sb.append("pa_MP=").append(pa_MP).append("&");
-        sb.append("pd_FrpId=").append(pd_FrpId).append("&");
-        sb.append("pr_NeedResponse=").append(pr_NeedResponse).append("&");
-        sb.append("hmac=").append(hmac);
-
-        HttpServletResponse response = ServletActionContext.getResponse();
-        response.sendRedirect(sb.toString());
-
-        return NONE;
+        return "paySuccess";
     }
 
     /**
@@ -204,11 +166,18 @@ public class OrderAction extends ActionSupport{
      * @return
      */
     public String callBack(){
-        Order currOrder = orderService.findByOid(Integer.parseInt(r6_Order));
-        currOrder.setState(2);// 修改订单状态.
-        orderService.update(currOrder);
-
-        this.addActionMessage("配置单款成功!订单号:"+r6_Order+" 付款金额:"+r3_Amt);
+        if (password!=null){
+            User existUser=(User)ServletActionContext.getRequest().getSession().getAttribute("existUser");
+            String pwd=existUser.getPassword();
+            if (pwd.equals(password)) {
+                this.addActionMessage("付款成功！");
+                Order currOrder = orderService.findByOid(oid);
+                currOrder.setState(2);
+                orderService.update(currOrder);
+                return "msg";
+            }
+            return null;
+        }
         return "msg";
     }
 
