@@ -42,10 +42,25 @@
     %>
 
     <form action="order_callBack.action" method="post">
-        卡号：<input type="text" name="cardId"/><br>
-        密码：<input type="password" name="password"/><br>
         <input type="hidden" name="oid" value="<s:property value="order.oid"/>"/>
-        <input type="submit" value="付款"/>
+        <input type="hidden" name="pd_FrpId" value="<s:property value="pd_FrpId"/>"/>
+        <table>
+            <tr>
+                <th>卡号</th>
+                <td>
+                    <input type="text" name="cardId"/>
+                </td>
+            </tr>
+            <tr>
+                <th>密码</th>
+                <td>
+                    <input type="password" name="password"/><font color="red"><span><s:fielderror fieldName="passwordError"/></font>
+                </td>
+            </tr>
+            <tr>
+                <th><input type="submit" value="付款"/></th>
+            </tr>
+        </table>
     </form>
 </div>
 

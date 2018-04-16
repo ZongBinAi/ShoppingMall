@@ -166,19 +166,26 @@ public class OrderAction extends ActionSupport{
      * @return
      */
     public String callBack(){
+        Order currOrder = orderService.findByOid(oid);
+        ActionContext.getContext().getValueStack().set("order",currOrder);
+        ActionContext.getContext().getValueStack().set("pd_FrpId",pd_FrpId);
         if (password!=null){
             User existUser=(User)ServletActionContext.getRequest().getSession().getAttribute("existUser");
             String pwd=existUser.getPassword();
             if (pwd.equals(password)) {
+                //密码正确
                 this.addActionMessage("付款成功！");
-                Order currOrder = orderService.findByOid(oid);
+                System.out.println("============"+oid+"=================");
                 currOrder.setState(2);
                 orderService.update(currOrder);
                 return "msg";
+            }else {
+                //密码错误，重新输入密码
+                this.addFieldError("passwordError","密码错误");
+                return "paySuccess";
             }
-            return null;
         }
-        return "msg";
+        return "paySuccess";
     }
 
     /**

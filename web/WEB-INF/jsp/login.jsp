@@ -27,8 +27,7 @@
 <div class="container login">
     <div class="span12">
         <div class="ad">
-            <img src="${pageContext.request.contextPath}/image/login.jpg" width="500" height="330" alt="会员登录"
-                 title="会员登录">
+            <img src="${pageContext.request.contextPath}/image/login.jpg" width="500" height="330" alt="会员登录" title="会员登录">
         </div>
     </div>
     <div class="span12 last">
@@ -40,50 +39,35 @@
                 <div class="title">
                     <s:actionerror cssStyle="color: red"/>
                 </div>
-                <form id="loginForm" action="${pageContext.request.contextPath}/user_login.action" method="post"
-                      novalidate="novalidate">
+                <form id="loginForm" action="${pageContext.request.contextPath}/user_login.action" method="post" novalidate="novalidate">
                     <table>
                         <tbody>
                         <tr>
-                            <th>
-                                用户名:
-                            </th>
+                            <th>用户名:</th>
                             <td>
-                                <input type="text" id="username" name="username" class="text"
-                                       maxlength="20"><span><s:fielderror fieldName="username"/> </span>
+                                <input type="text" id="username" name="username" class="text" maxlength="20"><span><s:fielderror fieldName="username"/></span>
                             </td>
                         </tr>
                         <tr>
-                            <th>
-                                密&nbsp;&nbsp;码:
-                            </th>
+                            <th>密&nbsp;&nbsp;码:</th>
                             <td>
-                                <input type="password" id="password" name="password" class="text" maxlength="20"
-                                       autocomplete="off"><span><s:fielderror fieldName="username"/> </span>
+                                <input type="password" id="password" name="password" class="text" maxlength="20" autocomplete="off"><span><s:fielderror fieldName="username"/> </span>
                             </td>
                         </tr>
                         <tr>
-                            <th>
-                                验证码:
-                            </th>
+                            <th>验证码:</th>
                             <td>
-										<span class="fieldSet">
-											<input type="text" id="captcha" name="checkcode"
-                                                   class="text captcha" maxlength="4" autocomplete="off">
-											<img id="checkImg" class="captchaImage"
-                                                 src="${pageContext.request.contextPath}/checkImg.action"
-                                                 title="点击更换验证码" onclick="change1()">
-										</span>
+                                <span class="fieldSet">
+                                    <input type="text" id="captcha" name="checkcode" class="text captcha" maxlength="4" autocomplete="off">
+                                    <img id="checkImg" class="captchaImage" src="${pageContext.request.contextPath}/checkImg.action" title="点击更换验证码" onclick="change1()">
+                                </span>
                             </td>
                         </tr>
                         <tr>
-                            <th>&nbsp;
-
-                            </th>
+                            <th>&nbsp;</th>
                             <td>
                                 <label>
-                                    <input type="checkbox" id="isRememberUsername" name="isRememberUsername"
-                                           value="true">记住用户名
+                                    <input type="checkbox" id="isRememberUsername" name="isRememberUsername" value="true">记住用户名
                                 </label>
                                 <label>
                                     &nbsp;&nbsp;<a>找回密码</a>

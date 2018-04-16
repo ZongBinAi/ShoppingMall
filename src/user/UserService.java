@@ -21,7 +21,7 @@ public class UserService {
      */
     public void regist(User user){
         //保存用户：
-        user.setState(0);   //0:未激活     1：激活
+        user.setState(1);   //0:未激活     1：激活
         //设置激活码
         String code= UUIDUtils.getUUID();
         user.setCode(code);

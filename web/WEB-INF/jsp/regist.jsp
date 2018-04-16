@@ -43,49 +43,7 @@
             img.src = "${pageContext.request.contextPath}/checkImg.action?" + new Date().getTime();
         }
 
-        /* function checkUserName() {
-             //获得用户名值：
-             var username=document.getElementById("username").value;
-             //创建异步加载对象：
-             var xhr=cretaeXMLHttpRequest();
-             //设置监听
-             xhr.onreadystatechange=function () {
-                 if (xhr.readyState==4){
-                     if (xhr.status==200){
-                         var data=xhr.responseText;
-                         document.getElementById("span1").innerHTML=data;
-                     }
-                 }
-             }
-
-             //打开连接
-             xhr.open("GET","${pageContext.request.contextPath}/user_checkUserName.action?"+new Date().getTime()+"&username="+username,true);
-			//发送
-			xhr.send(null);
-        }
-
-        function cretaeXMLHttpRequest() {
-            var xmlHttp;
-            try{// Firefox, Opera8.0+ Safari
-                xmlHttp=new XMLHttpRequest();
-			}catch (e){
-                try{
-                    xmlHttp=new ActiveXObject("Msxml2,XMLHTTP");
-				}catch (e){
-                    try{
-                        xmlHttp=new ActiveXObject("Microsoft.XMLHTTP");
-					}catch (e){
-
-					}
-				}
-			}
-			return xmlHttp;
-        }
-*/
-
     </script>
-
-
 </head>
 <body>
 
@@ -111,9 +69,7 @@
                                     <span class="requiredField">*</span>用户名:
                                 </th>
                                 <td>
-                                    <input type="text" id="username" name="username" class="text" maxlength="20"
-                                           onblur="checkUserName()"><span id="span1"><s:fielderror
-                                        fieldName="username"/></span>
+                                    <input type="text" id="username" name="username" class="text" maxlength="20" onblur="checkUserName()"><span id="span1"><s:fielderror fieldName="username"/></span>
                                 </td>
                             </tr>
                             <tr>
@@ -121,8 +77,7 @@
                                     <span class="requiredField">*</span>密&nbsp;&nbsp;码:
                                 </th>
                                 <td>
-                                    <input type="password" id="password" name="password" class="text" maxlength="20"
-                                           autocomplete="off"><span><s:fielderror fieldName="password"/></span>
+                                    <input type="password" id="password" name="password" class="text" maxlength="20" autocomplete="off"><span><s:fielderror fieldName="password"/></span>
                                 </td>
                             </tr>
                             <tr>
@@ -130,8 +85,7 @@
                                     <span class="requiredField">*</span>确认密码:
                                 </th>
                                 <td>
-                                    <input type="password" id="repassword" name="repassword" class="text"
-                                           maxlength="20" autocomplete="off">
+                                    <input type="password" id="repassword" name="repassword" class="text" maxlength="20" autocomplete="off">
                                 </td>
                             </tr>
                             <tr>
@@ -139,8 +93,7 @@
                                     <span class="requiredField">*</span>E-mail:
                                 </th>
                                 <td>
-                                    <input type="text" id="email" name="email" class="text"
-                                           maxlength="200"><span><s:fielderror fieldName="email"/></span>
+                                    <input type="text" id="email" name="email" class="text" maxlength="200"><span><s:fielderror fieldName="email"/></span>
                                 </td>
                             </tr>
                             <tr>
@@ -152,32 +105,26 @@
                                 </td>
                             </tr>
                             <tr>
-                                <th>
-                                    姓名:
-                                </th>
+                                <th>姓名:</th>
                                 <td>
                                     <input type="text" name="name" class="text" maxlength="200">
                                 </td>
                             </tr>
                             <tr>
-                                <th>
-                                    性别:
-                                </th>
+                                <th>性别:</th>
                                 <td>
-												<span class="fieldSet">
-														<label>
-															<input type="radio" name="sex" value="male">男
-														</label>
-														<label>
-															<input type="radio" name="sex" value="female">女
-														</label>
-												</span>
+                                    <span class="fieldSet">
+                                        <label>
+                                            <input type="radio" name="sex" value="male">男
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="sex" value="female">女
+                                        </label>
+                                    </span>
                                 </td>
                             </tr>
                             <tr>
-                                <th>
-                                    地址:
-                                </th>
+                                <th>地址:</th>
                                 <td>
                                     <input type="text" name="addr" class="text" maxlength="200">
                                 </td>
@@ -187,13 +134,10 @@
                                     <span class="requiredField">*</span>验证码:
                                 </th>
                                 <td>
-										<span class="fieldSet">
-											<input type="text" id="checkcode" name="checkcode" class="text captcha"
-                                                   maxlength="4" autocomplete="off">
-											<img id="checkImg" class="captchaImage"
-                                                 src="${pageContext.request.contextPath}/checkImg.action"
-                                                 title="点击更换验证码" onclick="change()">
-										</span>
+                                    <span class="fieldSet">
+                                        <input type="text" id="checkcode" name="checkcode" class="text captcha" maxlength="4" autocomplete="off">
+                                        <img id="checkImg" class="captchaImage" src="${pageContext.request.contextPath}/checkImg.action" title="点击更换验证码" onclick="change()">
+                                    </span>
                                 </td>
                             </tr>
                             <tr>
@@ -218,17 +162,13 @@
                                 </td>
                             </tr>
                             <tr>
-                                <th>&nbsp;
-
-                                </th>
+                                <th>&nbsp;</th>
                                 <td>
                                     注册协议
                                 </td>
                             </tr>
                             <tr>
-                                <th>&nbsp;
-
-                                </th>
+                                <th>&nbsp;</th>
                                 <td>
                                     <div id="agreement" class="agreement" style="height: 200px;">
                                         <p>
@@ -281,12 +221,6 @@
             </div>
         </div>
     </div>
-
     <%@ include file="footer.jsp" %>
-
-    <div id="_my97DP" style="position: absolute; top: -1970px; left: -1970px;">
-        <iframe style="width: 190px; height: 191px;" src="./会员注册 - Powered By Mango Team_files/My97DatePicker.htm"
-                frameborder="0" border="0" scrolling="no"></iframe>
-    </div>
 </body>
 </html>

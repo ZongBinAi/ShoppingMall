@@ -51,7 +51,8 @@ public class UserAction extends ActionSupport implements ModelDriven<User>{
             return "registInput";
         }
         userService.regist(user);
-        this.addActionMessage("注册成功！请去邮箱激活");
+        this.addActionMessage("注册成功！");
+
         return "registSuccess";
     }
 
