@@ -37,7 +37,7 @@
                             <a href="${pageContext.request.contextPath}/order_findByOid.action?oid=<s:property value="#order.oid"/>"><font color="red">付款</font></a>
                         </s:if>
                         <s:elseif test="#order.state==2">
-                            已付款
+                            已付款,运输中
                         </s:elseif>
                         <s:elseif test="#order.state==3">
                             <a href="${pageContext.request.contextPath}/order_updateState.action?oid=<s:property value="#order.oid"/>"><font color="blue">确认收货</font></a>

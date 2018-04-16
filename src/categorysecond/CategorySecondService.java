@@ -25,7 +25,7 @@ public class CategorySecondService {
     public PageBean<CategorySecond> findByPage(Integer page) {
         //封装pageBean
         PageBean<CategorySecond> pageBean=new PageBean<CategorySecond>();
-        Integer limit=10;
+        Integer limit=20;
 
         //封装页数
         pageBean.setPage(page);
