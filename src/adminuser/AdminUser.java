@@ -31,4 +31,7 @@ public class AdminUser {
     public void setPassword(String password) {
         this.password = password;
     }
+
+
+
 }
