@@ -97,7 +97,7 @@ public class OrderAction extends ActionSupport{
     }
 
     /**
-     * 从购物车页面保存订单
+     * 从配置单页面保存订单
      * @return
      */
     public String saveOrder(){
@@ -107,7 +107,7 @@ public class OrderAction extends ActionSupport{
         order.setState(1); // 1 未付款   2 已经付款.  3.已经发货   4 已经收货.
         // 有些数据需要从购物车中获取:
         HttpServletRequest request = ServletActionContext.getRequest();
-        // 获得购物车:
+        // 获得配置单:
         Cart cart = (Cart) request.getSession().getAttribute("cart");
         if(cart == null){
             this.addActionMessage("您还没有配置单!请先去配置!");
@@ -123,7 +123,7 @@ public class OrderAction extends ActionSupport{
         order.setUser(existUser);
 
         /********************封装订单项数据*************/
-        // 订单项数据从 购物项的数据获得.
+        // 订单项数据从 硬件商品的数据获得.
         for (CartItem cartItem : cart.getCartItems()) {
             OrderItem orderItem = new OrderItem();
             orderItem.setCount(cartItem.getCount());
@@ -133,7 +133,7 @@ public class OrderAction extends ActionSupport{
 
             order.getOrderItems().add(orderItem);
         }
-        // 清空购物车.
+        // 清空配置单.
         cart.clearCart();
 
         // 保存订单:

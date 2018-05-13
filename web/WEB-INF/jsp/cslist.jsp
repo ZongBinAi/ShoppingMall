@@ -26,8 +26,7 @@
             <s:iterator value="categoryList" var="c">
                 <dl>
                     <dt>
-                        <a href="${pageContext.request.contextPath}/product_findByCid.action?cid=<s:property value="#c.cid"/>&page=1"><s:property
-                                value="#c.cname"/> </a>
+                        <a href="${pageContext.request.contextPath}/product_findByCid.action?cid=<s:property value="#c.cid"/>&page=1"><s:property value="#c.cname"/> </a>
                     </dt>
 
                         <%--二级分类--%>

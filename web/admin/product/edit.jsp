@@ -15,14 +15,14 @@
         <tr>
             <td class="ta_01" align="center" bgColor="#afd1f3" colSpan="4"
                 height="26">
-                <strong><STRONG>修改商品</STRONG>
+                <strong><STRONG>修改硬件商品</STRONG>
                 </strong>
             </td>
         </tr>
 
         <tr>
             <td width="18%" align="center" bgColor="#f5fafe" class="ta_01">
-                商品名称：
+                硬件名称：
             </td>
             <td class="ta_01" bgColor="#ffffff" colspan="3">
                 <input type="text" name="pname" value="<s:property value="model.pname"/>" id="userAction_save_do_logonName" class="bg"/>
@@ -36,7 +36,7 @@
                 <input type="text" name="shop_price" value="<s:property value="model.shop_price"/>" id="logonPwd"/>
             </td>
             <td align="center" bgColor="#f5fafe" class="ta_01">
-                市场价格：
+                参考价格：
             </td>
             <td class="ta_01" bgColor="#ffffff">
                 <input type="text" name="market_price" value="<s:property value="model.market_price"/>" id="userAction_save_do_userName" class="bg"/>
@@ -66,7 +66,7 @@
 
         <TR>
             <TD class="ta_01" align="center" bgColor="#f5fafe">
-                商品描述：
+                硬件描述：
             </TD>
             <TD class="ta_01" bgColor="#ffffff" colSpan="3">
                 <textarea name="pdesc" cols="30" rows="3" id="userAction_save_do_remark" style="WIDTH: 96%">

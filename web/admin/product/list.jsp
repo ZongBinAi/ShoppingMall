@@ -19,7 +19,7 @@
         <TBODY>
         <tr>
             <td class="ta_01" align="center" bgColor="#afd1f3">
-                <strong>商品 列 表</strong>
+                <strong>硬件商品列表</strong>
             </TD>
         </tr>
         <tr>
@@ -39,16 +39,16 @@
                             序号
                         </td>
                         <td align="center" width="17%">
-                            商品图片
+                            硬件图片
                         </td>
                         <td align="center" width="17%">
-                            商品名称
+                            硬件名称
                         </td>
                         <td align="center" width="8%">
                             商城价格
                         </td>
                         <td align="center" width="23%">
-                            市场价格
+                            参考价格
                         </td>
                         <td width="11%" align="center">
                             是否热门

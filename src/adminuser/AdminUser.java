@@ -32,6 +32,4 @@ public class AdminUser {
         this.password = password;
     }
 
-
-
 }

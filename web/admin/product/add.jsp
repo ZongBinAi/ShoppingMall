@@ -14,14 +14,14 @@
         <tr>
             <td class="ta_01" align="center" bgColor="#afd1f3" colSpan="4"
                 height="26">
-                <strong><STRONG>添加商品</STRONG>
+                <strong><STRONG>添加硬件商品</STRONG>
                 </strong>
             </td>
         </tr>
 
         <tr>
             <td width="18%" align="center" bgColor="#f5fafe" class="ta_01">
-                商品名称：
+                硬件名称：
             </td>
             <td class="ta_01" bgColor="#ffffff" colspan="3">
                 <input type="text" name="pname" value="" id="userAction_save_do_logonName" class="bg"/>
@@ -35,7 +35,7 @@
                 <input type="text" name="shop_price" value="" id="logonPwd"/>
             </td>
             <td align="center" bgColor="#f5fafe" class="ta_01">
-                市场价格：
+                参考价格：
             </td>
             <td class="ta_01" bgColor="#ffffff">
                 <input type="text" name="market_price" value="" id="userAction_save_do_userName" class="bg"/>
@@ -66,7 +66,7 @@
 
         <tr>
             <td align="center" bgColor="#f5fafe" class="ta_01">
-                商品图片：
+                硬件图片：
             </td>
             <td class="ta_01" bgColor="#ffffff" colSpan="3">
                 <input type="file" name="upload" size="30" value="" id="userAction_save_do_upload"/>
@@ -74,7 +74,7 @@
         </tr>
         <TR>
             <TD class="ta_01" align="center" bgColor="#f5fafe">
-                商品描述：
+                硬件描述：
             </TD>
             <TD class="ta_01" bgColor="#ffffff" colSpan="3">
                 <textarea name="pdesc" cols="30" rows="3" id="userAction_save_do_remark" style="WIDTH: 96%"></textarea>
